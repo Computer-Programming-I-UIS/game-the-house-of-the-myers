@@ -11,9 +11,12 @@ PImage [] Diario = new PImage[2] ;
 int Nivel = 0 ; // nivel
 int c = 0 ; // Contador escena inicio
 
+presion QW ;
+
 void setup(){
   size(1000,700);
   Portada = loadImage("Portada.png");
+  QW = new presion() ;
   for(int i = 0; i < Inicio.length ;i++){ // este for se usa para cargar las imagenes que van en el inicio
     Inicio[i] = loadImage("Inicio_" + i + ".png");}
   for(int i = 0; i < Mapa.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
@@ -47,5 +50,13 @@ void draw(){
     case 8 : //Creditos
     rect(0,0,30,20);
     break;
+  }
+}
+class presion{
+  presion(){}
+  void display(){
+    textAlign(CENTER, TOP);
+    textSize(32);
+    text("Presione 'Z' para interactuar ", 500, 630);
   }
 }
