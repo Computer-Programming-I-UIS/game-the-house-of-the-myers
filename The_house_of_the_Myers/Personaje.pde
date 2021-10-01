@@ -19,18 +19,18 @@ void persona(){
       }else{this.R = 1 ;}
     }if(keyCode==UP){//se pregunta si se esta precionanda izquierda
       this.y = y - 10;
-      if(R==4){
-        this.R=6;
-      }else{this.R=4;}
+      if( R == 4 ){
+        this.R= 5 ;
+      }else{this.R= 4;}
     }else if(keyCode==DOWN){// se pregunta si se esta precionando derecha
       this.y = y + 10;
-      if(R==7){
-        this.R=8;
-      }else{this.R=7;}}
+      if(R== 6){
+        this.R=6 ;
+      }else{this.R = 6;}}
   }
-  if(x < 0){ this.x = x + 10 ; }
-  if(x > 910){ this.x = x - 10 ; }
-  if(y < 5){ this.y = y + 10 ; }
+  if(x < 11){ this.x = x + 10 ; }
+  if(x > 870){ this.x = x - 10 ; }
+  if(y < 54){ this.y = y + 10 ; }
   if(y > 589){ this.y = y - 10 ; }
   image(Personaje[R], x , y, 100, 100 );
   if(keyPressed){
