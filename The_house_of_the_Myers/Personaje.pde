@@ -4,6 +4,7 @@ int x = 450 ; // ubicación x
 int y = 300 ; // ubicación y
 int D = 0 ; // numero de paginas del diario
 int DD = 0 ; // numero de paginas del diario actual
+
 void persona(){
   if(keyPressed&&(key==CODED)){//se revisa que se este presionando una tecla
     if(keyCode==LEFT){//se pregunta si se esta precionanda izquierda
@@ -32,7 +33,6 @@ void persona(){
   if(x > 910){ this.x = x - 10 ; }
   if(y < 5){ this.y = y + 10 ; }
   if(y > 589){ this.y = y - 10 ; }
-  image(Personaje[R], x , y, 100, 100 );
   if(keyPressed){
     if(key == 'x'){if(ID == 1){this.ID = 0;}else{this.ID = 1;}}}
   if(ID == 1){
