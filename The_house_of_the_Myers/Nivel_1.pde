@@ -19,8 +19,7 @@ void nivel_1(){
   rect(207,104,10,400);
   if(( y < 511 )&&(y > 104 )){ if(( x > 197) && ( x < 209)){this.x = x + 10 ; }} // choque escaleras
   if(( y < 511 )&&(y > 104 )){ if(( x <147)&&( x > 137)){this.x = x - 10 ; }} // choque escaleras
-  image(Personaje[R], x , y, 100, 100 );
-  rect(900,104,30,200);
+  rect(870,407,70,150);
   if(( y < 304 )&&(y > 104 )){ if( x > 830){this.x = x - 10 ; }} // choque Libreria
   if(( y < 304 )&&(y > 104 )){ if( x > 740){if(keyPressed){
       if(key == 'z'){
@@ -32,7 +31,6 @@ void nivel_1(){
     libreria() ;
   }
   
-  rect(870,407,70,150);
   if(( y < 557 )&&(y > 407 )){ if( x > 780){this.x = x - 10 ; }} // choque cofre
   if(( y < 557 )&&(y > 407 )){ if( x > 720){if(keyPressed){
     if(key == 'z'){
@@ -41,6 +39,22 @@ void nivel_1(){
       }else{this.li = 1 ;}
     }}else{ QW.display() ; }}} // Invocar texto QW  
 }
+
+int lie = 0 ;
+int ccc = 0 ;
 void libreria() {
-  rect(0,0,30,20);
+  if(lie == 0){
+    image(Libre[lie], 0 , 0, 1000, 699 );
+    if(mouseY < 350 ){ if(mouseY > 200 ){ if( mouseX  < 620){ if( mouseX > 550){
+      text("Clip para coger la hoja doblada", 500, 630);
+      if( mouseButton == LEFT  ){
+        this.lie = 1 ;
+        this.D = D + 1 ;
+        text("Encontraste una página que parece ser del diarío", 500, 630);
+  }}}}}}else{ image(Libre[lie], 0 , 0, 1000, 699 );
+  if(ccc > 10){
+    text("Encontraste una página que parece ser del diarío", 500, 630);
+    this.ccc = ccc + 1 ;
+  }else{text("Presiona 'z' para dejar de interactuar", 500, 630);}
+  }
 }

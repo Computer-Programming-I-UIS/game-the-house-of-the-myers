@@ -8,6 +8,7 @@ PImage [] Inicio = new PImage[3] ; // Variable para el inicio del juego
 PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[7] ;
 PImage [] Diario = new PImage[2] ;
+PImage [] Libre = new PImage[2] ;
 int Nivel = 1 ; // nivel
 int c = 0 ; // Contador escena inicio
 
@@ -25,6 +26,8 @@ void setup(){
     Personaje[i] = loadImage("Judith_" + i + ".png");}
   for(int i = 0; i < Diario.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Diario[i] = loadImage("Libro_" + i + ".png");}
+  for(int i = 0; i < Libre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+    Libre[i] = loadImage("Libreria_" + i + ".png");}
 }
 void draw(){ 
   switch(Nivel){
