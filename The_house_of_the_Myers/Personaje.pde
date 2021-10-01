@@ -8,9 +8,9 @@ void persona(){
   if(keyPressed&&(key==CODED)){//se revisa que se este presionando una tecla
     if(keyCode==LEFT){//se pregunta si se esta precionanda izquierda
       this.x = x - 10;
-      if(R == 5){
-      this.R = 4;
-      }else{this.R = 5;}
+      if(R == 3){
+      this.R = 2;
+      }else{this.R = 3;}
       
     }else if(keyCode==RIGHT){// se pregunta si se esta precionando derecha
       this.x = x + 10;
@@ -19,11 +19,14 @@ void persona(){
       }else{this.R = 1 ;}
     }if(keyCode==UP){//se pregunta si se esta precionanda izquierda
       this.y = y - 10;
-      if(R==3){
-        this.R=3;
-      }else{this.R=3;}
+      if(R==4){
+        this.R=4;
+      }else{this.R=4;}
     }else if(keyCode==DOWN){// se pregunta si se esta precionando derecha
-      this.y = y + 10;}
+      this.y = y + 10;
+      if(R==5){
+        this.R=5;
+      }else{this.R=5;}}
   }
   if(x < 0){ this.x = x + 10 ; }
   if(x > 910){ this.x = x - 10 ; }
@@ -37,7 +40,7 @@ void persona(){
       if(key == 'c' ){
         if(DD <= D){ this.DD = DD + 1;}}
         if(key == 'v' ){
-          if((D <= DD)&&(D <= 0)){this.DD = DD - 1;}}}
+          if((D <= DD)&&(DD >= 1)){this.DD = DD - 1;}}}
       image(Diario[DD], 0,0, 1000,700);
   }else{image(Diario[0], 857,580, 150 ,110);}
 }

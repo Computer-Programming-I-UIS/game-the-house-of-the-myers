@@ -4,7 +4,7 @@ Minim minim; // se declaran nombre para llamer las funciones
 AudioPlayer player;
 
 PImage Portada ;
-PImage [] Inicio = new PImage[4] ; // Variable para el inicio del juego
+PImage [] Inicio = new PImage[3] ; // Variable para el inicio del juego
 PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[6] ;
 PImage [] Diario = new PImage[2] ;
@@ -35,7 +35,7 @@ void draw(){
     }}}}}
     break;
     case 1 : // Nivel 1
-    if(c < 4){ // Se muestan las instrucciónes y introducción del juego
+    if(c < 3){ // Se muestan las instrucciónes y introducción del juego
       image(Inicio[c], 0 , 0, 1000, 700 );
       if(keyPressed){this.c = c + 1 ; }
     }
