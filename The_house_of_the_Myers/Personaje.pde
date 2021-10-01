@@ -8,7 +8,10 @@ void persona(){
   if(keyPressed&&(key==CODED)){//se revisa que se este presionando una tecla
     if(keyCode==LEFT){//se pregunta si se esta precionanda izquierda
       this.x = x - 10;
-      this.R = 0 ;
+      if(R == 5){
+      this.R = 4;
+      }else{this.R = 5;}
+      
     }else if(keyCode==RIGHT){// se pregunta si se esta precionando derecha
       this.x = x + 10;
       if(R == 1){
@@ -16,6 +19,9 @@ void persona(){
       }else{this.R = 1 ;}
     }if(keyCode==UP){//se pregunta si se esta precionanda izquierda
       this.y = y - 10;
+      if(R==3){
+        this.R=3;
+      }else{this.R=3;}
     }else if(keyCode==DOWN){// se pregunta si se esta precionando derecha
       this.y = y + 10;}
   }

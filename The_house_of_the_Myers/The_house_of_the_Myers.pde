@@ -6,7 +6,7 @@ AudioPlayer player;
 PImage Portada ;
 PImage [] Inicio = new PImage[4] ; // Variable para el inicio del juego
 PImage [] Mapa = new PImage[1] ;
-PImage [] Personaje = new PImage[2] ;
+PImage [] Personaje = new PImage[6] ;
 PImage [] Diario = new PImage[2] ;
 int Nivel = 0 ; // nivel
 int c = 0 ; // Contador escena inicio
