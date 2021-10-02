@@ -19,7 +19,7 @@ La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "
 
 # Género
 
-Videojuego de arcade de terror
+Videojuego tipo puzzle de terror
 
 Clasificación por edades
 Categoría T - Teen
