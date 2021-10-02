@@ -1,16 +1,12 @@
 int llave = 0 ; // Variable llave = 0 no tiene la llave
-int cofre = 0 ; // cofre abierto o cerrado
+int cofre = 1 ; // cofre abierto o cerrado
 int li = 0 ; // libreroa abierta o cerrada
 int uz = 0 ; // interactuando 1 = true
 void nivel_1(){
   textAlign(CENTER, TOP);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
-<<<<<<< HEAD
-=======
-  image(Escaleras,-30,45,290,500);
   image(Cofre[0],800,407,200,210);
->>>>>>> 1cb6cbf32c1d84b0448d65f36f4e60ecb2547d02
   if(uz == 0){persona(); }// para dectetar si se encuentra haciendo alguna interacción
   if(( y < 154 )&&(y > 0 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
@@ -44,7 +40,7 @@ void nivel_1(){
       }else{this.cofre = 1 ;}
     }}else{ QW.display() ; }}} // Invocar texto QW  
     if(cofre == 1){
-     
+     cofrre();
   }
 }
 
@@ -67,4 +63,46 @@ void libreria() {
     text("Encontraste una página que parece ser del diarío", 500, 630);
     text("Presiona 'z' para dejar de interactuar", 500, 580);
   }else{text("Presiona 'z' para dejar de interactuar", 500, 580);}
+}
+int n1 = 0; int n2 = 0; int n3 = 0; int n4 = 0;
+void cofrre(){
+  
+  image(Candado, 100 , 0, 800, 599 );
+  textSize(150);
+  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n1 < 9){
+      this.n1 = n1 + 1;
+    }else{this.n1 = 0 ;}}}}}
+  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n1 > 0){
+      this.n1 = n1 - 1;
+    }else{this.n1 = 9 ;}}}}}
+  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 460)&&( mouseX > 320)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n2 < 9){
+      this.n2 = n2 + 1;
+    }else{this.n1 = 0 ;}}}}}
+  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 460)&&( mouseX > 320)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n2 > 0){
+      this.n2 = n2 - 1;
+    }else{this.n2 = 9 ;}}}}}
+  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 620)&&( mouseX > 560)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n3 < 9){
+      this.n3 = n3 + 1;
+    }else{this.n1 = 0 ;}}}}}
+  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 620)&&( mouseX > 560)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n3 > 0){
+      this.n3 = n3 - 1;
+    }else{this.n3 = 9 ;}}}}}
+  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 730)&&( mouseX > 620)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n4 < 9){
+      this.n4 = n4 + 1;
+    }else{this.n1 = 0 ;}}}}}
+  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 730)&&( mouseX > 620)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(n4 > 0){
+      this.n4 = n4 - 1;
+    }else{this.n4 = 9 ;}}}}}
+  text( n1 , 250 , 330 );
+  text( n2 , 420 , 330 );
+  text( n3 , 560 , 330 );
+  text( n4 , 720 , 330 );
 }
