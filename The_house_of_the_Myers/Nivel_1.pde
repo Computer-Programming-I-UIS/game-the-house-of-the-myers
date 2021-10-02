@@ -1,12 +1,13 @@
 int llave = 0 ; // Variable llave = 0 no tiene la llave
-int cofre = 1 ; // cofre abierto o cerrado
+int cofre = 0 ; // cofre abierto o cerrado
 int li = 0 ; // libreroa abierta o cerrada
 int uz = 0 ; // interactuando 1 = true
+int co = 0 ; // cofre ya abierto o cerrado
 void nivel_1(){
   textAlign(CENTER, TOP);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
-  image(Cofre[0],800,407,200,210);
+  image(Cofre[co],800,407,200,210);
   if(uz == 0){persona(); }// para dectetar si se encuentra haciendo alguna interacción
   if(( y < 154 )&&(y > 0 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
@@ -65,44 +66,61 @@ void libreria() {
   }else{text("Presiona 'z' para dejar de interactuar", 500, 580);}
 }
 int n1 = 0; int n2 = 0; int n3 = 0; int n4 = 0;
+int ar = 0 ;
 void cofrre(){
-  
-  image(Candado, 100 , 0, 800, 599 );
-  textSize(150);
-  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n1 < 9){
-      this.n1 = n1 + 1;
-    }else{this.n1 = 0 ;}}}}}
-  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n1 > 0){
-      this.n1 = n1 - 1;
-    }else{this.n1 = 9 ;}}}}}
-  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 460)&&( mouseX > 320)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n2 < 9){
-      this.n2 = n2 + 1;
-    }else{this.n1 = 0 ;}}}}}
-  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 460)&&( mouseX > 320)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n2 > 0){
-      this.n2 = n2 - 1;
-    }else{this.n2 = 9 ;}}}}}
-  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 620)&&( mouseX > 560)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n3 < 9){
-      this.n3 = n3 + 1;
-    }else{this.n1 = 0 ;}}}}}
-  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 620)&&( mouseX > 560)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n3 > 0){
-      this.n3 = n3 - 1;
-    }else{this.n3 = 9 ;}}}}}
-  if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 730)&&( mouseX > 620)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n4 < 9){
-      this.n4 = n4 + 1;
-    }else{this.n1 = 0 ;}}}}}
-  if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 730)&&( mouseX > 620)){if(mousePressed){if( mouseButton == LEFT  ){
-    if(n4 > 0){
-      this.n4 = n4 - 1;
-    }else{this.n4 = 9 ;}}}}}
-  text( n1 , 250 , 330 );
-  text( n2 , 420 , 330 );
-  text( n3 , 560 , 330 );
-  text( n4 , 720 , 330 );
+  if(co == 0){
+  image(Cofre[1],0,0, 1000, 700);
+  if(( mouseY < 400 )&&(mouseY > 350)){ if(( mouseX < 530)&&( mouseX > 450)){
+      text("Clip para intentar abrir el candado", 500, 630);
+      if(mousePressed){if( mouseButton == LEFT  ){this.ar = 1 ; }}}}
+  if(ar == 1){
+    image(Candado, 100 , 0, 800, 599 );
+    textSize(150);
+    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n1 < 9){
+        this.n1 = n1 + 1;
+      }else{this.n1 = 0 ;}}}}}
+    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n1 > 0){
+        this.n1 = n1 - 1;
+      }else{this.n1 = 9 ;}}}}}
+    if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 460)&&( mouseX > 320)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n2 < 9){
+        this.n2 = n2 + 1;
+      }else{this.n1 = 0 ;}}}}}
+    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 460)&&( mouseX > 320)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n2 > 0){
+        this.n2 = n2 - 1;
+      }else{this.n2 = 9 ;}}}}}
+    if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 620)&&( mouseX > 560)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n3 < 9){
+        this.n3 = n3 + 1;
+      }else{this.n1 = 0 ;}}}}}
+    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 620)&&( mouseX > 560)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n3 > 0){
+        this.n3 = n3 - 1;
+      }else{this.n3 = 9 ;}}}}}
+    if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 730)&&( mouseX > 620)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n4 < 9){
+        this.n4 = n4 + 1;
+      }else{this.n1 = 0 ;}}}}}
+    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 730)&&( mouseX > 620)){if(mousePressed){if( mouseButton == LEFT  ){
+      if(n4 > 0){
+        this.n4 = n4 - 1;
+      }else{this.n4 = 9 ;}}}}}
+    text( n1 , 250 , 330 );
+    text( n2 , 420 , 330 );
+    text( n3 , 560 , 330 );
+    text( n4 , 720 , 330 );
+    rect(820,260 , 40, 40);
+    if(( mouseY < 310 )&&(mouseY > 260)){ if(( mouseX < 860)&&( mouseX > 820)){
+      text("Clip para dejar de intentar abrir el candado", 500, 630);
+      if(mousePressed){if( mouseButton == LEFT  ){
+        textSize(32);
+        this.ar = 0 ;
+  }}}}}
+  if(((n1 == 2)&&( n2 == 1))&&((n3 == 1)&&(n4 == 1))){this.co = 2 ;}}
+  if(co == 2){
+    
+  }
 }
