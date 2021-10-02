@@ -9,6 +9,11 @@ PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[2] ;
 PImage [] Libre = new PImage[2] ;
+<<<<<<< HEAD
+=======
+PImage [] Cofre = new PImage [1];
+PImage  Escaleras;
+>>>>>>> 1cb6cbf32c1d84b0448d65f36f4e60ecb2547d02
 int Nivel = 1 ; // nivel
 int c = 0 ; // Contador escena inicio
 
@@ -28,6 +33,8 @@ void setup(){
     Diario[i] = loadImage("Libro_" + i + ".png");}
   for(int i = 0; i < Libre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Libre[i] = loadImage("Libreria_" + i + ".png");}
+ for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+    Cofre[i] = loadImage("Cofre_" + i + ".png");}
 
 }
 void draw(){ 

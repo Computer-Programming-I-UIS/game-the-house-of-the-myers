@@ -6,6 +6,11 @@ void nivel_1(){
   textAlign(CENTER, TOP);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
+<<<<<<< HEAD
+=======
+  image(Escaleras,-30,45,290,500);
+  image(Cofre[0],800,407,200,210);
+>>>>>>> 1cb6cbf32c1d84b0448d65f36f4e60ecb2547d02
   if(uz == 0){persona(); }// para dectetar si se encuentra haciendo alguna interacción
   if(( y < 154 )&&(y > 0 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
@@ -17,7 +22,7 @@ void nivel_1(){
       }}else{ QW.display() ; }}} // Invocar texto QW   
   if(( y < 511 )&&(y > 10 )){ if(( x > 197) && ( x < 213)){this.x = x + 10 ; }} // choque escaleras
   if(( y < 511 )&&(y > 10)){ if(( x <147)&&( x > 137)){this.x = x - 10; }} // choque escaleras
-  rect(870,407,70,150);
+ // rect(870,407,70,150);
   if(( y < 304 )&&(y > 104 )){ if( x > 830){this.x = x - 10 ; }} // choque Libreria
   if(( y < 304 )&&(y > 104 )){ if( x > 740){if(keyPressed){
       if(key == 'z'){
@@ -30,8 +35,8 @@ void nivel_1(){
     libreria() ;
   }
   
-  if(( y < 557 )&&(y > 407 )){ if( x > 780){this.x = x - 10 ; }} // choque cofre
-  if(( y < 557 )&&(y > 407 )){ if( x > 720){if(keyPressed){
+  if(( y < 557 )&&(y > 325)){ if( x > 800){this.x = x - 10 ; }} // choque cofre
+  if(( y < 557 )&&(y > 300)){ if( x > 720){if(keyPressed){
     if(key == 'z'){
       if(uz == 1){this.uz = 0 ;}else{this.uz = 1 ;}
       if(cofre == 1 ){
