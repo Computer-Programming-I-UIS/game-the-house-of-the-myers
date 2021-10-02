@@ -24,9 +24,9 @@ void persona(){
       }else{this.R= 4;}
     }else if(keyCode==DOWN){// se pregunta si se esta precionando derecha
       this.y = y + 10;
-      if(R== 6){
+      if(R== 7){
         this.R=6 ;
-      }else{this.R = 6;}}
+      }else{this.R = 7;}}
   }
   if(x < 11){ this.x = x + 10 ; }
   if(x > 870){ this.x = x - 10 ; }
