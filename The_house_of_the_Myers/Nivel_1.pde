@@ -5,6 +5,7 @@ int uz = 0 ; // interactuando 1 = true
 int co = 0 ; // cofre ya abierto o cerrado
 void nivel_1(){
   textAlign(CENTER, TOP);
+  fill(0);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
   image(Cofre[co],800,407,200,210);
@@ -110,10 +111,12 @@ void cofrre(){
       if(n4 > 0){
         this.n4 = n4 - 1;
       }else{this.n4 = 9 ;}}}}}
+    fill(255);
     text( n1 , 250 , 330 );
     text( n2 , 420 , 330 );
     text( n3 , 560 , 330 );
     text( n4 , 720 , 330 );
+    fill(0);
     if(( mouseY < 310 )&&(mouseY > 260)){ if(( mouseX < 860)&&( mouseX > 820)){
       textSize(32);
       text("Clip para dejar de intentar abrir el candado", 500, 630);

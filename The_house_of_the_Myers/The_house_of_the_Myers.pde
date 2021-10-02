@@ -7,12 +7,12 @@ PImage Portada ;
 PImage [] Inicio = new PImage[3] ; // Variable para el inicio del juego
 PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[8] ;
-PImage [] Diario = new PImage[2] ;
+PImage [] Diario = new PImage[3] ;
 PImage [] Libre = new PImage[2] ;
 PImage [] Cofre = new PImage [5];
 PImage Candado ;
 
-int Nivel = 1 ; // nivel
+int Nivel = 0 ; // nivel
 int c = 0 ; // Contador escena inicio
 
 presion QW ;
