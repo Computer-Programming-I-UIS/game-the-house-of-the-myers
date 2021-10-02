@@ -3,11 +3,13 @@ int cofre = 0 ; // cofre abierto o cerrado
 int li = 0 ; // libreroa abierta o cerrada
 int uz = 0 ; // interactuando 1 = true
 void nivel_1(){
+
+
   textAlign(CENTER, TOP);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
+  image(Escaleras,-30,45,290,500);
   if(uz == 0){persona(); }// para dectetar si se encuentra haciendo alguna interacción
-  rect(11,104,200,100);  
   if(( y < 204 )&&(y > 104 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
       if(key == 'z'){ if(llave == 1){
@@ -16,9 +18,8 @@ void nivel_1(){
       }else{
         text("No tienes la llave de esta puerta", 500, 630);}
       }}else{ QW.display() ; }}} // Invocar texto QW   
-  rect(207,104,10,400);
-  if(( y < 511 )&&(y > 104 )){ if(( x > 197) && ( x < 209)){this.x = x + 10 ; }} // choque escaleras
-  if(( y < 511 )&&(y > 104 )){ if(( x <147)&&( x > 137)){this.x = x - 10 ; }} // choque escaleras
+  if(( y < 511 )&&(y > 10 )){ if(( x > 197) && ( x < 213)){this.x = x + 10 ; }} // choque escaleras
+  if(( y < 511 )&&(y > 10)){ if(( x <147)&&( x > 137)){this.x = x - 10; }} // choque escaleras
   rect(870,407,70,150);
   if(( y < 304 )&&(y > 104 )){ if( x > 830){this.x = x - 10 ; }} // choque Libreria
   if(( y < 304 )&&(y > 104 )){ if( x > 740){if(keyPressed){
