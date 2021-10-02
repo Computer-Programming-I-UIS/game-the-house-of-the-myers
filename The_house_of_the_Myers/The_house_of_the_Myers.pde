@@ -9,20 +9,14 @@ PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[2] ;
 PImage [] Libre = new PImage[2] ;
-PImage  Escaleras;
 int Nivel = 1 ; // nivel
 int c = 0 ; // Contador escena inicio
 
 presion QW ;
 
 void setup(){
-  
   size(1000,700);
-
   Portada = loadImage("Portada.png");
-   Escaleras = loadImage("Escaleras.png");
-
-  
   QW = new presion() ;
   for(int i = 0; i < Inicio.length ;i++){ // este for se usa para cargar las imagenes que van en el inicio
     Inicio[i] = loadImage("Inicio_" + i + ".png");}
