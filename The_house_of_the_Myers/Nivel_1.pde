@@ -67,8 +67,9 @@ void libreria() {
 }
 int n1 = 0; int n2 = 0; int n3 = 0; int n4 = 0;
 int ar = 0 ;
+int coo = 0 ;
 void cofrre(){
-  if(co == 0){
+  if(coo == 0){
   image(Cofre[1],0,0, 1000, 700);
   if(( mouseY < 400 )&&(mouseY > 350)){ if(( mouseX < 530)&&( mouseX > 450)){
       text("Clip para intentar abrir el candado", 500, 630);
@@ -76,11 +77,11 @@ void cofrre(){
   if(ar == 1){
     image(Candado, 100 , 0, 800, 599 );
     textSize(150);
-    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(( mouseY < 350 )&&(mouseY > 290)){ if(( mouseX < 300)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
       if(n1 < 9){
         this.n1 = n1 + 1;
       }else{this.n1 = 0 ;}}}}}
-    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 280)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
+    if(( mouseY < 580 )&&(mouseY > 500)){ if(( mouseX < 300)&&( mouseX > 250)){if(mousePressed){if( mouseButton == LEFT  ){
       if(n1 > 0){
         this.n1 = n1 - 1;
       }else{this.n1 = 9 ;}}}}}
@@ -112,15 +113,15 @@ void cofrre(){
     text( n2 , 420 , 330 );
     text( n3 , 560 , 330 );
     text( n4 , 720 , 330 );
-    rect(820,260 , 40, 40);
     if(( mouseY < 310 )&&(mouseY > 260)){ if(( mouseX < 860)&&( mouseX > 820)){
+      textSize(32);
       text("Clip para dejar de intentar abrir el candado", 500, 630);
       if(mousePressed){if( mouseButton == LEFT  ){
-        textSize(32);
         this.ar = 0 ;
   }}}}}
-  if(((n1 == 2)&&( n2 == 1))&&((n3 == 1)&&(n4 == 1))){this.co = 2 ;}}
-  if(co == 2){
+  if(((n1 == 2)&&( n2 == 1))&&((n3 == 1)&&(n4 == 1))){this.co = 2 ;this.coo = 2 ;}}
+  if(coo == 2){
+    image(Cofre[3],0,0, 1000, 700);
     
   }
 }
