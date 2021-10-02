@@ -57,7 +57,7 @@ void draw(){
     }
     break;
     case 2 : // nivel 2
-    rect(0,0,30,20);
+    nivel_2();
     break;
     case 8 : //Creditos
     rect(0,0,30,20);
