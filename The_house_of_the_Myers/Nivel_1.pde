@@ -123,11 +123,17 @@ void cofrre(){
       if(mousePressed){if( mouseButton == LEFT  ){
         this.ar = 0 ;
   }}}}}
-  if(((n1 == 2)&&( n2 == 1))&&((n3 == 1)&&(n4 == 1))){this.co = 2 ;this.coo = 2 ;}}
+  if(((n1 == 1 )&&( n2 == 9))&&((n3 == 7)&&(n4 == 8))){this.co = 2 ;this.coo = 2 ;}}
   if(coo == 2){
     if(cooo == 0 ){
       image(Cofre[3],0,0, 1000, 700);
-      
+      if(( mouseY < 600 )&&(mouseY > 150)){ if(( mouseX < 1000)&&( mouseX > 50)){
+        text("Clip para coger la hoja doblada y la llave", 500, 630);
+        if(mousePressed){if( mouseButton == LEFT  ){
+          this.D = D + 1 ;
+          this.llave = 1 ;
+          this.cooo = 1 ;
+      }}}}
     }else{image(Cofre[4],0,0, 1000, 700);}
   }
 }
