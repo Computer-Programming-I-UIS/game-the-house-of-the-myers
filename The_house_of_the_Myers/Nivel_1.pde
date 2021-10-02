@@ -3,15 +3,16 @@ int cofre = 0 ; // cofre abierto o cerrado
 int li = 0 ; // libreroa abierta o cerrada
 int uz = 0 ; // interactuando 1 = true
 void nivel_1(){
-
-
   textAlign(CENTER, TOP);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
+<<<<<<< HEAD
+=======
   image(Escaleras,-30,45,290,500);
   image(Cofre[0],800,407,200,210);
+>>>>>>> 1cb6cbf32c1d84b0448d65f36f4e60ecb2547d02
   if(uz == 0){persona(); }// para dectetar si se encuentra haciendo alguna interacción
-  if(( y < 204 )&&(y > 104 )){ if(( x > 11) && ( x < 211)){
+  if(( y < 154 )&&(y > 0 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
       if(key == 'z'){ if(llave == 1){
         text("La puerta se abre y entraría Hanna en ella ", 500, 630);
