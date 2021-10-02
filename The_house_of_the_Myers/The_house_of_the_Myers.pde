@@ -9,7 +9,7 @@ PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[2] ;
 PImage [] Libre = new PImage[2] ;
-PImage [] Cofre = new PImage [4];
+PImage [] Cofre = new PImage [5];
 PImage Candado ;
 
 int Nivel = 1 ; // nivel

@@ -39,7 +39,7 @@ void nivel_1(){
       if(cofre == 1 ){
           this.cofre = 0 ;
       }else{this.cofre = 1 ;}
-    }}else{ QW.display() ; }}} // Invocar texto QW  
+    }}if(cofre == 1){}else{ QW.display() ; }}} // Invocar texto QW  
     if(cofre == 1){
      cofrre();
   }
@@ -68,6 +68,7 @@ void libreria() {
 int n1 = 0; int n2 = 0; int n3 = 0; int n4 = 0;
 int ar = 0 ;
 int coo = 0 ;
+int cooo = 0 ;
 void cofrre(){
   if(coo == 0){
   image(Cofre[1],0,0, 1000, 700);
@@ -121,7 +122,9 @@ void cofrre(){
   }}}}}
   if(((n1 == 2)&&( n2 == 1))&&((n3 == 1)&&(n4 == 1))){this.co = 2 ;this.coo = 2 ;}}
   if(coo == 2){
-    image(Cofre[3],0,0, 1000, 700);
-    
+    if(cooo == 0 ){
+      image(Cofre[3],0,0, 1000, 700);
+      
+    }else{image(Cofre[4],0,0, 1000, 700);}
   }
 }
