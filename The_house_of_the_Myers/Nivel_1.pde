@@ -1,18 +1,18 @@
 int llave = 0 ; // Variable llave = 0 no tiene la llave
 int cofre = 0 ; // cofre abierto o cerrado
 int li = 0 ; // libreroa abierta o cerrada
+int uz = 0 ; // interactuando 1 = true
 void nivel_1(){
   textAlign(CENTER, TOP);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
-  persona();
-  if(mouseY < 0 ){ if(mouseY > 0 ){ if( mouseX < 100){ if( mouseX > 100){if( mouseButton == LEFT  ){}}}}}
+  if(uz == 0){persona(); }// para dectetar si se encuentra haciendo alguna interacción
   rect(11,104,200,100);  
   if(( y < 204 )&&(y > 104 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
       if(key == 'z'){ if(llave == 1){
         text("La puerta se abre y entraría hanna en ella ", 500, 630);
-        this.Nivel = 2 ; 
+        this.Nivel = 2 ;
       }else{
         text("No tienes la llave de esta puerta", 500, 630);}
       }}else{ QW.display() ; }}} // Invocar texto QW   
@@ -23,6 +23,7 @@ void nivel_1(){
   if(( y < 304 )&&(y > 104 )){ if( x > 830){this.x = x - 10 ; }} // choque Libreria
   if(( y < 304 )&&(y > 104 )){ if( x > 740){if(keyPressed){
       if(key == 'z'){
+        if(uz == 1){this.uz = 0 ;}else{this.uz = 1 ;}
         if(li == 1 ){
           this.li = 0 ;
         }else{this.li = 1 ;}
@@ -34,14 +35,18 @@ void nivel_1(){
   if(( y < 557 )&&(y > 407 )){ if( x > 780){this.x = x - 10 ; }} // choque cofre
   if(( y < 557 )&&(y > 407 )){ if( x > 720){if(keyPressed){
     if(key == 'z'){
-      if(li == 1 ){
-          this.li = 0 ;
-      }else{this.li = 1 ;}
+      if(uz == 1){this.uz = 0 ;}else{this.uz = 1 ;}
+      if(cofre == 1 ){
+          this.cofre = 0 ;
+      }else{this.cofre = 1 ;}
     }}else{ QW.display() ; }}} // Invocar texto QW  
+    if(cofre == 1){
+     
+  }
 }
 
-int lie = 0 ;
-int ccc = 0 ;
+int lie = 0 ; // se usa para saber si ya tomo la pagina
+int ccc = 0 ; // se usa para marcar que ya tiene la pagina
 void libreria() {
   if(lie == 0){
     image(Libre[lie], 0 , 0, 1000, 699 );
@@ -50,11 +55,13 @@ void libreria() {
       if( mouseButton == LEFT  ){
         this.lie = 1 ;
         this.D = D + 1 ;
+        this.ccc = 1 ;
         text("Encontraste una página que parece ser del diarío", 500, 630);
-  }}}}}}else{ image(Libre[lie], 0 , 0, 1000, 699 );
-  if(ccc > 10){
+  }}}}}}else{ image(Libre[lie], 0 , 0, 1000, 699 );}
+  if(mouseY < 700 ){ if(mouseY > 500 ){ if( mouseX  < 620){if( mouseX > 120){
+      text("Los libros estarian en tan mal estado que seria incapaz de leerlos", 500, 550);}}}}
+  if(ccc > 0){
     text("Encontraste una página que parece ser del diarío", 500, 630);
-    this.ccc = ccc + 1 ;
-  }else{text("Presiona 'z' para dejar de interactuar", 500, 630);}
-  }
+    text("Presiona 'z' para dejar de interactuar", 500, 580);
+  }else{text("Presiona 'z' para dejar de interactuar", 500, 580);}
 }
