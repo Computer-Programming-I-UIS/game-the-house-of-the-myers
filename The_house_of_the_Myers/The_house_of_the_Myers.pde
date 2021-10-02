@@ -9,14 +9,19 @@ PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[2] ;
 PImage [] Libre = new PImage[2] ;
+PImage  Escaleras;
 int Nivel = 1 ; // nivel
 int c = 0 ; // Contador escena inicio
 
 presion QW ;
 
 void setup(){
+   Escaleras = loadImage("Escaleras.png");
   size(1000,700);
+
   Portada = loadImage("Portada.png");
+  Escaleras = loadImage("Escaleras.png");
+  
   QW = new presion() ;
   for(int i = 0; i < Inicio.length ;i++){ // este for se usa para cargar las imagenes que van en el inicio
     Inicio[i] = loadImage("Inicio_" + i + ".png");}
@@ -28,11 +33,13 @@ void setup(){
     Diario[i] = loadImage("Libro_" + i + ".png");}
   for(int i = 0; i < Libre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Libre[i] = loadImage("Libreria_" + i + ".png");}
+
 }
 void draw(){ 
   switch(Nivel){
     case 0 :
     image(Portada, 0 , 0, 1000, 700 );
+    image(Escaleras,0,20,300,500);
     if(mouseY < 410 ){ if(mouseY > 310 ){ if( mouseX  < 400){ if( mouseX > 100){if( mouseButton == LEFT  ){
       this.Nivel = 1 ; // Entrar juego
     }}}}}

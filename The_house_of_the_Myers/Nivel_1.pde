@@ -11,7 +11,7 @@ void nivel_1(){
   if(( y < 204 )&&(y > 104 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
       if(key == 'z'){ if(llave == 1){
-        text("La puerta se abre y entraría hanna en ella ", 500, 630);
+        text("La puerta se abre y entraría Hanna en ella ", 500, 630);
         this.Nivel = 2 ;
       }else{
         text("No tienes la llave de esta puerta", 500, 630);}
