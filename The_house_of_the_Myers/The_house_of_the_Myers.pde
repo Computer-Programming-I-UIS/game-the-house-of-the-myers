@@ -41,8 +41,8 @@ void setup(){
   for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Cofre[i] = loadImage("/Nivel1/Cofre_" + i + ".png");}
   minim = new Minim(this);
-  Menu = minim.loadFile("/Sonido&Musica/soundside__royalty_free_music__-_Halloween_Witches.mp3" ); // se  guarda el audio para el boton en la variable player
-  Nivel1 = minim.loadFile("/Sonido&Musica/soundside__royalty_free_music__-_Halloween_Witches.mp3" ); // se  guarda el audio para el boton en la variable player
+  Menu = minim.loadFile("/Sonido&Musica/Homicida_Paradójicos.mp3" ); // se  guarda el audio para el boton en la variable player
+  Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.mp3" ); // se  guarda el audio para el boton en la variable player
   Cofres = minim.loadSample("/Sonido&Musica/Sonido_Cofre.mp3" ); // se  guarda el audio para el boton en la variable player
   Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el boton en la variable player
 }
