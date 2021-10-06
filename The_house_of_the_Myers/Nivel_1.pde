@@ -21,6 +21,8 @@ void nivel_1(){
       }}else{ QW.display() ; }}} // Invocar texto QW   
   if(( y < 511 )&&(y > 10 )){ if(( x > 197) && ( x < 213)){this.x = x + 10 ; }} // choque escaleras
   if(( y < 511 )&&(y > 10)){ if(( x <147)&&( x > 137)){this.x = x - 10; }} // choque escaleras
+  if(( y < 300)&&(y > 1 )){ if(( x > 197) && ( x < 300)){this.x = x + 10 ; }} // choque caja
+
  // rect(870,407,70,150);
   if(( y < 304 )&&(y > 104 )){ if( x > 830){this.x = x - 10 ; }} // choque Libreria
   if(( y < 304 )&&(y > 104 )){ if( x > 740){if(keyPressed){
