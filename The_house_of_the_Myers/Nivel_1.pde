@@ -5,7 +5,7 @@ int uz = 0 ; // interactuando 1 = true
 int co = 0 ; // cofre ya abierto o cerrado
 void nivel_1(){
   textAlign(CENTER, TOP);
-  fill(0);
+  fill(250);
   textSize(32);
   image(Mapa[0], 0 , 0, 1000, 690 );
   image(Cofre[co],800,407,200,210);
@@ -13,12 +13,14 @@ void nivel_1(){
   if(( y < 154 )&&(y > 0 )){ if(( x > 11) && ( x < 211)){
     if(keyPressed){
       if(key == 'z'){ if(llave == 1){
+        image(intt, 200 , 615 , 600, 80); 
         text("La puerta se abre y entraría Hanna en ella ", 500, 630);
         this.Nivel = 2 ;
         Puertas.trigger();
       }else{
+        image(intt, 200 , 615 , 600, 80);
         text("No tienes la llave de esta puerta", 500, 630);}
-      }}else{ QW.display() ; }}} // Invocar texto QW   
+      }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}} // Invocar texto QW   
   if(( y < 511 )&&(y > 10 )){ if(( x > 197) && ( x < 213)){this.x = x + 10 ; }} // choque escaleras
   if(( y < 511 )&&(y > 10)){ if(( x <147)&&( x > 137)){this.x = x - 10; }} // choque escaleras
   if(( y < 300)&&(y > 1 )){ if(( x > 197) && ( x < 300)){this.x = x + 10 ; }} // choque caja
@@ -31,7 +33,7 @@ void nivel_1(){
         if(li == 1 ){
           this.li = 0 ;
         }else{this.li = 1 ;}
-      }}else{ QW.display() ; }}} // Invocar texto QW  
+      }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}} // Invocar texto QW  
   if(li == 1){
     libreria() ;
   }
@@ -43,7 +45,7 @@ void nivel_1(){
       if(cofre == 1 ){
         this.cofre = 0 ;
       }else{this.cofre = 1 ;  Cofres.trigger();}
-    }}if(cofre == 1){}else{ QW.display() ; }}} // Invocar texto QW  
+    }}if(cofre == 1){}else{ image(intt, 200 , 615 , 600, 80);  QW.display() ; }}} // Invocar texto QW  
     if(cofre == 1){
      cofrre();
   }
@@ -54,20 +56,22 @@ int ccc = 0 ; // se usa para marcar que ya tiene la pagina
 void libreria() {
   if(lie == 0){
     image(Libre[lie], 0 , 0, 1000, 699 );
+    if(ccc > 0){
+    image(intt, 100 , 615 , 800, 80); 
+    text("Encontraste una página que parece ser del diarío", 500, 630);
+    image(intt, 200 , 615 , 600, 80); 
+    text("Presiona 'z' para dejar de interactuar", 500, 630);
+  }else{ image(intt, 200 , 615 , 600, 80); text("Presiona 'z' para dejar de interactuar", 500, 630);}
     if(mouseY < 350 ){ if(mouseY > 200 ){ if( mouseX  < 620){ if( mouseX > 550){
+       image(intt, 200 , 615 , 600, 80); 
       text("Clip para coger la hoja doblada", 500, 630);
       if( mouseButton == LEFT  ){
         this.lie = 1 ;
         this.D = D + 1 ;
         this.ccc = 1 ;
+        image(intt, 200 , 615 , 600, 80); 
         text("Encontraste una página que parece ser del diarío", 500, 630);
   }}}}}}else{ image(Libre[lie], 0 , 0, 1000, 699 );}
-  if(mouseY < 700 ){ if(mouseY > 500 ){ if( mouseX  < 620){if( mouseX > 120){
-      text("Los libros estarian en tan mal estado que seria incapaz de leerlos", 500, 550);}}}}
-  if(ccc > 0){
-    text("Encontraste una página que parece ser del diarío", 500, 630);
-    text("Presiona 'z' para dejar de interactuar", 500, 580);
-  }else{text("Presiona 'z' para dejar de interactuar", 500, 580);}
 }
 int n1 = 0; int n2 = 0; int n3 = 0; int n4 = 0;
 int ar = 0 ;
@@ -77,6 +81,7 @@ void cofrre(){
   if(coo == 0){
   image(Cofre[1],0,0, 1000, 700);
   if(( mouseY < 400 )&&(mouseY > 350)){ if(( mouseX < 530)&&( mouseX > 450)){
+     image(intt, 200 , 615 , 600, 80); 
       text("Clip para intentar abrir el candado", 500, 630);
       if(mousePressed){if( mouseButton == LEFT  ){this.ar = 1 ; }}}}
   if(ar == 1){
@@ -122,6 +127,7 @@ void cofrre(){
     fill(0);
     if(( mouseY < 310 )&&(mouseY > 260)){ if(( mouseX < 860)&&( mouseX > 820)){
       textSize(32);
+      image(intt, 100 , 615 , 800, 80); 
       text("Clip para dejar de intentar abrir el candado", 500, 630);
       if(mousePressed){if( mouseButton == LEFT  ){
         this.ar = 0 ;
@@ -131,6 +137,7 @@ void cofrre(){
     if(cooo == 0 ){
       image(Cofre[3],0,0, 1000, 700);
       if(( mouseY < 600 )&&(mouseY > 150)){ if(( mouseX < 1000)&&( mouseX > 50)){
+        image(intt, 100 , 615 , 800, 80); 
         text("Clip Derecho para coger la hoja doblada y la llave", 500, 630);
         if(mousePressed){if( mouseButton == RIGHT  ){
           this.D = D + 1 ;

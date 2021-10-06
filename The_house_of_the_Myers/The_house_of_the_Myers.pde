@@ -8,13 +8,14 @@ AudioSample Cofres;
 
 
 PImage Portada ;
-PImage [] Inicio = new PImage[3] ; // Variable para el inicio del juego
+PImage [] Inicio = new PImage[2] ; // Variable para el inicio del juego
 PImage [] Mapa = new PImage[1] ;
 PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[4] ;
 PImage [] Libre = new PImage[2] ;
 PImage [] Cofre = new PImage [5];
 PImage Candado ;
+PImage intt ;
 
 int Nivel = 0 ; // nivel
 int c = 0 ; // Contador escena inicio
@@ -24,6 +25,7 @@ presion QW ;
 void setup(){
   size(1000,700);
   Portada = loadImage("Portada.png");
+  intt = loadImage("Interactua.png");
   Candado = loadImage("/Nivel1/Candado.png");
   QW = new presion() ;
   for(int i = 0; i < Inicio.length ;i++){ // este for se usa para cargar las imagenes que van en el inicio
@@ -60,7 +62,7 @@ void draw(){
     case 1 : // Nivel 1
     Menu.pause();
     Nivel1.play();
-    if(c < 3){ // Se muestan las instrucciónes y introducción del juego
+    if(c < 2){ // Se muestan las instrucciónes y introducción del juego
       image(Inicio[c], 0 , 0, 1000, 700 );
       if(keyPressed){this.c = c + 1 ; }
     }
