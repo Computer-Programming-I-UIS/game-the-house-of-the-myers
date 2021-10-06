@@ -41,8 +41,8 @@ void setup(){
   for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Cofre[i] = loadImage("/Nivel1/Cofre_" + i + ".png");}
   minim = new Minim(this);
-  Menu = minim.loadFile("/Sonido&Musica/Homicida_Paradójicos.mp3" ); // se  guarda el audio para el boton en la variable player
-  Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.mp3" ); // se  guarda el audio para el boton en la variable player
+  Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el boton en la variable player
+  Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el boton en la variable player
   Cofres = minim.loadSample("/Sonido&Musica/Sonido_Cofre.mp3" ); // se  guarda el audio para el boton en la variable player
   Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el boton en la variable player
 }
@@ -50,8 +50,9 @@ void draw(){
   delay(10);
   switch(Nivel){
     case 0 :
-    Menu.play();
     image(Portada, 0 , 0, 1000, 700 );
+    Menu.setVolume(0);
+    Menu.play();
     if(mouseY < 410 ){ if(mouseY > 310 ){ if( mouseX  < 400){ if( mouseX > 100){if( mouseButton == LEFT  ){
       this.Nivel = 1 ; // Entrar juego
     }}}}}
