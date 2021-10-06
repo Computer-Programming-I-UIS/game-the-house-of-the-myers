@@ -19,6 +19,7 @@ Categoría T - Teen
 Apto para los adolescentes
 
 ![Categoría](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/CategoriaT.png)
+![Categoría](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/CategoriaPEGI_16.png)
 
 
 # Descripción
