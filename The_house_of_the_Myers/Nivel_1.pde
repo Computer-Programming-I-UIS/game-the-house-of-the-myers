@@ -15,7 +15,7 @@ void nivel_1(){
       if(key == 'z'){ if(llave == 1){
         text("La puerta se abre y entraría Hanna en ella ", 500, 630);
         this.Nivel = 2 ;
-        Puertas.rewind();
+        Puertas.trigger();
       }else{
         text("No tienes la llave de esta puerta", 500, 630);}
       }}else{ QW.display() ; }}} // Invocar texto QW   
@@ -40,11 +40,10 @@ void nivel_1(){
       if(uz == 1){this.uz = 0 ;}else{this.uz = 1 ;}
       if(cofre == 1 ){
         this.cofre = 0 ;
-      }else{this.cofre = 1 ;}
+      }else{this.cofre = 1 ;  Cofres.trigger();}
     }}if(cofre == 1){}else{ QW.display() ; }}} // Invocar texto QW  
     if(cofre == 1){
      cofrre();
-     Cofres.rewind();
   }
 }
 
@@ -130,8 +129,8 @@ void cofrre(){
     if(cooo == 0 ){
       image(Cofre[3],0,0, 1000, 700);
       if(( mouseY < 600 )&&(mouseY > 150)){ if(( mouseX < 1000)&&( mouseX > 50)){
-        text("Clip para coger la hoja doblada y la llave", 500, 630);
-        if(mousePressed){if( mouseButton == LEFT  ){
+        text("Clip Derecho para coger la hoja doblada y la llave", 500, 630);
+        if(mousePressed){if( mouseButton == RIGHT  ){
           this.D = D + 1 ;
           this.llave = 1 ;
           this.cooo = 1 ;

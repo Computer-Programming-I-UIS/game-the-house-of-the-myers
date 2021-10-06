@@ -3,8 +3,8 @@ import ddf.minim.*; //Se importa minim que sera la biblioteca que usaremos para 
 Minim minim; // se declaran nombre para llamer las funciones
 AudioPlayer Menu;
 AudioPlayer Nivel1;
-AudioPlayer Puertas;
-AudioPlayer Cofres;
+AudioSample Puertas;
+AudioSample Cofres;
 
 
 PImage Portada ;
@@ -24,24 +24,23 @@ presion QW ;
 void setup(){
   size(1000,700);
   Portada = loadImage("Portada.png");
-  Candado = loadImage("Candado.png");
+  Candado = loadImage("/Nivel1/Candado.png");
   QW = new presion() ;
   for(int i = 0; i < Inicio.length ;i++){ // este for se usa para cargar las imagenes que van en el inicio
-    Inicio[i] = loadImage("Inicio_" + i + ".png");}
+    Inicio[i] = loadImage("/Nivel1/Inicio_" + i + ".png");}
   for(int i = 0; i < Mapa.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Mapa[i] = loadImage("Nivel_" + i + ".png");}
   for(int i = 0; i < Personaje.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
-    Personaje[i] = loadImage("Judith_" + i + ".png");}
+    Personaje[i] = loadImage("/Judith/Judith_" + i + ".png");}
   for(int i = 0; i < Diario.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
-    Diario[i] = loadImage("Libro_" + i + ".png");}
+    Diario[i] = loadImage("/Judith/Libro_" + i + ".png");}
   for(int i = 0; i < Libre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
-    Libre[i] = loadImage("Libreria_" + i + ".png");}
+    Libre[i] = loadImage("/Nivel1/Libreria_" + i + ".png");}
   for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
-    Cofre[i] = loadImage(Nivel1,"Cofre_" + i + ".png");}
-  Menu = minim.loadFile("Musica defaul.mp3"); // se importa la canción
-  Nivel1 = minim.loadFile("Musica defaul.mp3"); // se importa la canción
-  Puertas = minim.loadFile("Sonido_Puerta.mp3"); // se importa la canción
-  Cofres = minim.loadFile("Sonido_Cofre.mp3"); // se importa la canción
+    Cofre[i] = loadImage("/Nivel1/Cofre_" + i + ".png");}
+  minim = new Minim(this);
+  Cofres = minim.loadSample("/Sonido&Musica/Sonido_Cofre.mp3" ); // se  guarda el audio para el boton en la variable player
+  Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el boton en la variable player
 }
 void draw(){ 
   switch(Nivel){
