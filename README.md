@@ -8,19 +8,11 @@ game-the-house-of-the-myers created by GitHub Classroom
 
 -Deisy Tatiana Torres Pedraza -2200502
 
-# 	:jigsaw: Género 	:jigsaw:
+# 	:jigsaw: Género & Categoría 	:jigsaw:
 
 Videojuego tipo puzzle de terror
 
-Clasificación por edades
-
-Categoría T - Teen
-
-Apto para los adolescentes
-
-![Categoría](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/CategoriaT.png)
-![Categoría](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/CategoriaPEGI_16.png)
-
+![Categoría](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Categoria.png)
 
 # Descripción
 
