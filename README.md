@@ -1,10 +1,24 @@
 # game-the-house-of-the-myers
 game-the-house-of-the-myers created by GitHub Classroom
 
+![Portada](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Inicio.png)
 
 # Hecho por
 -Carlos Fernando Jerez Carreño -2201729
+
 -Deisy Tatiana Torres Pedraza -2200502
+
+# Género
+
+Videojuego tipo puzzle de terror
+
+Clasificación por edades
+
+Categoría T - Teen
+
+Apto para los adolescentes
+
+![Categoría](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/CategoriaT.png)
 
 
 # Descripción
@@ -13,24 +27,18 @@ La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "
 
 # Requisitos
 
--Es necesario descargar la biblioteca Minim, siga las siguientes instrucciones - http://www.programacionyrobotica.com/control-de-sonido-1-con-processing/
+- Es necesario descargar la biblioteca Minim, siga las siguientes instrucciones - http://www.programacionyrobotica.com/control-de-sonido-1-con-processing/
 
--Al descargar el juego, entrar a la carpeta The house of the Myers y ejecutar el archivo .pde que tiene el nombre de la carpeta principal.
-
-# Género
-
-Videojuego tipo puzzle de terror
-
-Clasificación por edades
-Categoría T - Teen
-Apto para los adolescentes
+- Al descargar el juego, entrar a la carpeta The house of the Myers y ejecutar el archivo .pde que tiene el nombre de la carpeta principal.
 
 # Creditos
 Imagenes sacadas de :
-- https://www.stickpng.com/es/img/objetos/libro/coleccion-de-libros-antiguos
--  www.pngwing.com/ 
-- <a href='https://.pngtree.com/so/Rollos'>Rollos png de .pngtree.com/</a>
+- Stickpng -> https://www.stickpng.com/es/img/objetos/libro/coleccion-de-libros-antiguos
+- Pngwing ->  www.pngwing.com/ 
+- Pntree -> https://.pngtree.com/so/Rollos
+- Pixar -> https://www.pixilart.com/draw#
+
 Musica y sonidos usados :
 
-- Sound Edit www.youtube.com/channel/UC5hQxusq_Nkhani0qKPCPBw
-- RubioMiguel1 https://www.youtube.com/channel/UCmA7n1IODCHi7ppduGTyC2A
+- Sound Edit -> www.youtube.com/channel/UC5hQxusq_Nkhani0qKPCPBw
+- RubioMiguel1 -> https://www.youtube.com/channel/UCmA7n1IODCHi7ppduGTyC2A
