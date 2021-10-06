@@ -1,7 +1,11 @@
 import ddf.minim.*; //Se importa minim que sera la biblioteca que usaremos para poner música en el juego.
 
 Minim minim; // se declaran nombre para llamer las funciones
-AudioPlayer player;
+AudioPlayer Menu;
+AudioPlayer Nivel1;
+AudioPlayer Puertas;
+AudioPlayer Cofres;
+
 
 PImage Portada ;
 PImage [] Inicio = new PImage[3] ; // Variable para el inicio del juego
@@ -32,9 +36,12 @@ void setup(){
     Diario[i] = loadImage("Libro_" + i + ".png");}
   for(int i = 0; i < Libre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Libre[i] = loadImage("Libreria_" + i + ".png");}
- for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
-    Cofre[i] = loadImage("Cofre_" + i + ".png");}
-
+  for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+    Cofre[i] = loadImage(Nivel1,"Cofre_" + i + ".png");}
+  Menu = minim.loadFile("Musica defaul.mp3"); // se importa la canción
+  Nivel1 = minim.loadFile("Musica defaul.mp3"); // se importa la canción
+  Puertas = minim.loadFile("Sonido_Puerta.mp3"); // se importa la canción
+  Cofres = minim.loadFile("Sonido_Cofre.mp3"); // se importa la canción
 }
 void draw(){ 
   switch(Nivel){

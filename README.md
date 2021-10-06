@@ -30,3 +30,7 @@ Imagenes sacadas de :
 - https://www.stickpng.com/es/img/objetos/libro/coleccion-de-libros-antiguos
 -  www.pngwing.com/ 
 - <a href='https://.pngtree.com/so/Rollos'>Rollos png de .pngtree.com/</a>
+Musica y sonidos usados :
+
+- Sound Edit www.youtube.com/channel/UC5hQxusq_Nkhani0qKPCPBw
+- RubioMiguel1 https://www.youtube.com/channel/UCmA7n1IODCHi7ppduGTyC2A

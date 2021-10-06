@@ -15,6 +15,7 @@ void nivel_1(){
       if(key == 'z'){ if(llave == 1){
         text("La puerta se abre y entraría Hanna en ella ", 500, 630);
         this.Nivel = 2 ;
+        Puertas.rewind();
       }else{
         text("No tienes la llave de esta puerta", 500, 630);}
       }}else{ QW.display() ; }}} // Invocar texto QW   
@@ -38,11 +39,12 @@ void nivel_1(){
     if(key == 'z'){
       if(uz == 1){this.uz = 0 ;}else{this.uz = 1 ;}
       if(cofre == 1 ){
-          this.cofre = 0 ;
+        this.cofre = 0 ;
       }else{this.cofre = 1 ;}
     }}if(cofre == 1){}else{ QW.display() ; }}} // Invocar texto QW  
     if(cofre == 1){
      cofrre();
+     Cofres.rewind();
   }
 }
 
