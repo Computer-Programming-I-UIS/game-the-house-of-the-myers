@@ -1,14 +1,14 @@
-# game-the-house-of-the-myers
+# 	:hocho: The-house-of-the-myers 	:hocho:
 game-the-house-of-the-myers created by GitHub Classroom
 
 ![Portada](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Inicio.png)
 
-# Hecho por
+# 	:candle: Hecho por
 -Carlos Fernando Jerez Carreño -2201729
 
 -Deisy Tatiana Torres Pedraza -2200502
 
-# Género
+# 	:jigsaw: Género 	:jigsaw:
 
 Videojuego tipo puzzle de terror
 
@@ -25,20 +25,20 @@ Apto para los adolescentes
 
 La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "victima" llamada Hanna quién no sabe el motivo por el que fue raptada y encerrada en un sótado desconcido que resulta ser el de la casa de uno de los asesinos seriales mas peligrosos.
 
-# Requisitos
+# 	:video_game: ¿Como Jugar? 	:video_game:
 
 - Es necesario descargar la biblioteca Minim, siga las siguientes instrucciones - http://www.programacionyrobotica.com/control-de-sonido-1-con-processing/
 
 - Al descargar el juego, entrar a la carpeta The house of the Myers y ejecutar el archivo .pde que tiene el nombre de la carpeta principal.
 
-# Creditos
-Imagenes sacadas de :
+# 	:page_with_curl: Creditos 	:page_with_curl:
+ :framed_picture: Imagenes sacadas de :
 - Stickpng -> https://www.stickpng.com/es/img/objetos/libro/coleccion-de-libros-antiguos
 - Pngwing ->  www.pngwing.com/ 
 - Pntree -> https://.pngtree.com/so/Rollos
 - Pixar -> https://www.pixilart.com/draw#
 
-Musica y sonidos usados :
+:musical_note: Musica y sonidos usados :
 
 - Sound Edit -> www.youtube.com/channel/UC5hQxusq_Nkhani0qKPCPBw
 - RubioMiguel1 -> https://www.youtube.com/channel/UCmA7n1IODCHi7ppduGTyC2A
