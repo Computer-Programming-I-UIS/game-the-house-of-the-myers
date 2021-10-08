@@ -14,6 +14,7 @@ PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[4] ;
 PImage [] Libre = new PImage[2] ;
 PImage [] Cofre = new PImage [5];
+PImage [] Sustos = new PImage [4];
 PImage [] creditoss = new PImage[2] ;
 PImage Candado ;
 PImage intt ;
@@ -23,6 +24,8 @@ int c = 0 ; // Contador escena inicio
 int RR = 0 ;
 int xc = 0;
 int CRE = 1000;
+int sus;
+int suss;
 
 presion QW ;
 
@@ -46,6 +49,8 @@ void setup(){
     Cofre[i] = loadImage("/Nivel1/Cofre_" + i + ".png");}
   for(int i = 0; i < creditoss.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     creditoss[i] = loadImage("/Creditos/Creditos_" + i + ".png");}
+  for(int i = 0; i < Sustos.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+    Sustos[i] = loadImage("Sange_" + i + ".png");}
   minim = new Minim(this);
   Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el boton en la variable player
   Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el boton en la variable player
@@ -53,7 +58,7 @@ void setup(){
   Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el boton en la variable player
 }
 void draw(){ 
-  delay(30);
+  delay(15);
   switch(Nivel){
     case 0 :
     image(Portada, 0 , 0, 1000, 700 );
@@ -79,10 +84,12 @@ void draw(){
       Nivel1.play();
     }
     if(c < 2){ // Se muestan las instrucciónes y introducción del juego
+      frameRate(10) ;
       image(Inicio[c], 0 , 0, 1000, 700 );
       if(keyPressed){this.c = c + 1 ; }
     }
     else{
+     frameRate(60);
      nivel_1();
     }
     break;
@@ -113,4 +120,10 @@ void creditos(){
   this.xc = xc + 10 ;
   this.CRE = CRE - 5 ;
   if(CRE < -2000){ this.Nivel = 0 ; this.CRE = 1000 ; this.xc = 0 ;}
+}
+int cco = 0;
+void susto(){
+  if((cco  < 10)&&(cco > 0 )){
+    image(Sustos[suss] ,0,0,1000,700);
+    this.cco = cco + 1 ;}else{ sus = int(random(0 , 1000)); this.co = 0 ; suss = int(random(0 , 3)) ; if((sus > 10)&&(sus<25)){ this.cco = 1 ;  } }
 }

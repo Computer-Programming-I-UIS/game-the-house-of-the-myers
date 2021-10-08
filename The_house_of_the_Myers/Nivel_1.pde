@@ -49,6 +49,7 @@ void nivel_1(){
     if(cofre == 1){
      cofrre();
   }
+  susto() ;
 }
 
 int lie = 0 ; // se usa para saber si ya tomo la pagina
