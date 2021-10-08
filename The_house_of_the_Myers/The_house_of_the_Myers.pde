@@ -53,7 +53,7 @@ void setup(){
   Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el boton en la variable player
 }
 void draw(){ 
-  delay(10);
+  delay(30);
   switch(Nivel){
     case 0 :
     image(Portada, 0 , 0, 1000, 700 );
