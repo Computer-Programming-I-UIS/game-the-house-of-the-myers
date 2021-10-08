@@ -65,7 +65,7 @@ void libreria() {
   }else{ image(intt, 200 , 615 , 600, 80); text("Presiona 'z' para dejar de interactuar", 500, 630);}
     if(mouseY < 350 ){ if(mouseY > 200 ){ if( mouseX  < 620){ if( mouseX > 550){
        image(intt, 200 , 615 , 600, 80); 
-      text("Clip para coger la hoja doblada", 500, 630);
+      text("Clic para coger la hoja doblada", 500, 630);
       if( mouseButton == LEFT  ){
         this.lie = 1 ;
         this.D = D + 1 ;
@@ -83,7 +83,7 @@ void cofrre(){
   image(Cofre[1],0,0, 1000, 700);
   if(( mouseY < 400 )&&(mouseY > 350)){ if(( mouseX < 530)&&( mouseX > 450)){
      image(intt, 200 , 615 , 600, 80); 
-      text("Clip para intentar abrir el candado", 500, 630);
+      text("Clic para intentar abrir el candado", 500, 630);
       if(mousePressed){if( mouseButton == LEFT  ){this.ar = 1 ; }}}}
   if(ar == 1){
     image(Candado, 100 , 0, 800, 599 );
@@ -129,7 +129,7 @@ void cofrre(){
     if(( mouseY < 310 )&&(mouseY > 260)){ if(( mouseX < 860)&&( mouseX > 820)){
       textSize(32);
       image(intt, 100 , 615 , 800, 80); 
-      text("Clip para dejar de intentar abrir el candado", 500, 630);
+      text("Clic para dejar de intentar abrir el candado", 500, 630);
       if(mousePressed){if( mouseButton == LEFT  ){
         this.ar = 0 ;
   }}}}}
@@ -139,7 +139,7 @@ void cofrre(){
       image(Cofre[3],0,0, 1000, 700);
       if(( mouseY < 600 )&&(mouseY > 150)){ if(( mouseX < 1000)&&( mouseX > 50)){
         image(intt, 100 , 615 , 800, 80); 
-        text("Clip Derecho para coger la hoja doblada y la llave", 500, 630);
+        text("Clic Derecho para coger la hoja doblada y la llave", 500, 630);
         if(mousePressed){if( mouseButton == RIGHT  ){
           this.D = D + 1 ;
           this.llave = 1 ;
