@@ -9,7 +9,7 @@ AudioSample Cofres;
 
 PImage Portada ;
 PImage [] Inicio = new PImage[2] ; // Variable para el inicio del juego
-PImage [] Mapa = new PImage[1] ;
+PImage [] Mapa = new PImage[2] ;
 PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[4] ;
 PImage [] Libre = new PImage[2] ;
@@ -111,6 +111,6 @@ void creditos(){
   image(creditoss[0], CRE , 0, 2000, 600 );
   image(Personaje[RR], xc , 400, 200, 200 );
   this.xc = xc + 10 ;
-  this.CRE = CRE - 25 ;
+  this.CRE = CRE - 5 ;
   if(CRE < -2000){ this.Nivel = 0 ; this.CRE = 1000 ; this.xc = 0 ;}
 }

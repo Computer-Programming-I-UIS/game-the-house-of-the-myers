@@ -15,7 +15,9 @@ void nivel_1(){
       if(key == 'z'){ if(llave == 1){
         image(intt, 200 , 615 , 600, 80); 
         text("La puerta se abre y entraría Hanna en ella ", 500, 630);
-        this.Nivel = 2 ;
+        this.Nivel = 8 ;
+        this.x = 15 ;
+        this.y = 500 ;
         Puertas.trigger();
       }else{
         image(intt, 200 , 615 , 600, 80);
@@ -24,8 +26,6 @@ void nivel_1(){
   if(( y < 511 )&&(y > 10 )){ if(( x > 197) && ( x < 213)){this.x = x + 10 ; }} // choque escaleras
   if(( y < 511 )&&(y > 10)){ if(( x <147)&&( x > 137)){this.x = x - 10; }} // choque escaleras
   if(( y < 300)&&(y > 1 )){ if(( x > 197) && ( x < 300)){this.x = x + 10 ; }} // choque caja
-
- // rect(870,407,70,150);
   if(( y < 304 )&&(y > 104 )){ if( x > 830){this.x = x - 10 ; }} // choque Libreria
   if(( y < 304 )&&(y > 104 )){ if( x > 740){if(keyPressed){
       if(key == 'z'){
