@@ -29,7 +29,7 @@ void persona(){
       }else{this.R = 7;}}
   }
   if(x < 11){ this.x = x + 10 ; }
-  if(x > 870){ this.x = x - 10 ; }
+  if(x > 890){ this.x = x - 10 ; }
   if(y < 54){ this.y = y + 10 ; }
   if(y > 589){ this.y = y - 10 ; }
   image(Personaje[R], x , y, 100, 100 );
