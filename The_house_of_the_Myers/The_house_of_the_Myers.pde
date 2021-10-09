@@ -16,6 +16,7 @@ PImage [] Libre = new PImage[2] ;
 PImage [] Cofre = new PImage [5];
 PImage [] Sustos = new PImage [7];
 PImage [] creditoss = new PImage[2] ;
+PImage [] Lavadora= new PImage [3];
 PImage Candado ;
 PImage intt ;
 
@@ -51,6 +52,8 @@ void setup(){
     creditoss[i] = loadImage("/Creditos/Creditos_" + i + ".png");}
   for(int i = 0; i < Sustos.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Sustos[i] = loadImage("Sangre_" + i + ".png");}
+  for(int i = 0; i < Lavadora.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+    Lavadora[i] = loadImage("/Nivel2/Lavadora_" + i + ".png");}
   minim = new Minim(this);
   Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el boton en la variable player
   Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el boton en la variable player
