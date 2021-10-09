@@ -14,7 +14,7 @@ PImage [] Personaje = new PImage[8] ;
 PImage [] Diario = new PImage[4] ;
 PImage [] Libre = new PImage[2] ;
 PImage [] Cofre = new PImage [5];
-PImage [] Sustos = new PImage [4];
+PImage [] Sustos = new PImage [7];
 PImage [] creditoss = new PImage[2] ;
 PImage Candado ;
 PImage intt ;
@@ -50,7 +50,7 @@ void setup(){
   for(int i = 0; i < creditoss.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     creditoss[i] = loadImage("/Creditos/Creditos_" + i + ".png");}
   for(int i = 0; i < Sustos.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
-    Sustos[i] = loadImage("Sange_" + i + ".png");}
+    Sustos[i] = loadImage("Sangre_" + i + ".png");}
   minim = new Minim(this);
   Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el boton en la variable player
   Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el boton en la variable player
@@ -124,6 +124,6 @@ void creditos(){
 int cco = 0;
 void susto(){
   if((cco  < 10)&&(cco > 0 )){
-    image(Sustos[suss] ,0,0,1000,700);
-    this.cco = cco + 1 ;}else{ sus = int(random(0 , 1000)); this.co = 0 ; suss = int(random(0 , 3)) ; if((sus > 10)&&(sus<25)){ this.cco = 1 ;  } }
+    image(Sustos[suss],0,0,1000,700);
+    this.cco = cco + 1 ;}else{ sus = int(random(0 , 10000)); this.co = 0 ; suss = int(random(0 , 6)) ; if((sus > 10)&&(sus<25)){ this.cco = 1 ;  } }
 }

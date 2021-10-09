@@ -56,5 +56,5 @@ void nivel_2(){
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}}
   //text(x , 20 , 20  ) ;
   text(y , 20 , 20  ) ;
-  //susto();
+  susto();
 }
