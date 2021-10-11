@@ -55,13 +55,22 @@ void nivel_2(){
         text("No tienes la llave de esta puerta", 500, 630);}
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}}
   //text(x , 20 , 20  ) ;
-  text(y , 20 , 20  ) ;
+  //text(y , 20 , 20  ) ;
   susto();
 }
 
 void lavanderia(){
-  
-}
+  if(llag == 1){
+    image(Lavadora[1],0,0,1000,700);
+  }else{
+    image(Lavadora[0],0,0,1000,700);
+    if((mouseY < 552 )&&(mouseY > 439 )){ if(( mouseX  < 543)&&( mouseX > 416)){
+      image(intt, 200 , 615 , 600, 80); 
+      text("Clip para recoger la llave", 500, 630);
+      if(mousePressed){
+        this.llag = 1 ;
+}}}}}
+
 int llap = 0 ; int lac = 0 ; int lacc = 0 ;
 void lavaplatos(){
   if(llap == 1){
@@ -71,6 +80,4 @@ void lavaplatos(){
       image(intt, 200 , 615 , 600, 80); 
       text("Necesitarias una llave para soltar la tubería", 500, 630);}}}
   fill(0);
-  text(mouseY , 20 , 20 );
-  text(mouseX , 70 , 70 );
 }
