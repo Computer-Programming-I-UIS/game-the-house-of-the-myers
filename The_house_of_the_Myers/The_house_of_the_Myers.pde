@@ -9,13 +9,14 @@ AudioSample Cofres;
 
 PImage Portada ;
 PImage [] Inicio = new PImage[2] ; // Variable para el inicio del juego
-PImage [] Mapa = new PImage[2] ;
-PImage [] Personaje = new PImage[8] ;
-PImage [] Diario = new PImage[4] ;
-PImage [] Libre = new PImage[2] ;
-PImage [] Cofre = new PImage [5];
-PImage [] Sustos = new PImage [7];
+PImage [] Mapa = new PImage[2] ; // contiene los mapas del juego
+PImage [] Personaje = new PImage[8] ; // animación personaje
+PImage [] Diario = new PImage[4] ; // contiene las imagenes del diario
+PImage [] Libre = new PImage[2] ; // es la libreria
+PImage [] Cofre = new PImage [5]; // contiene los diferentes cofres
+PImage [] Sustos = new PImage [7]; // contiene las imagenes de myers sustos
 PImage [] creditoss = new PImage[2] ;
+PImage [] Lavaplatoss = new PImage[10] ; // contiene imagenes y animación del lavaplatos
 PImage Candado ;
 PImage intt ;
 
@@ -51,6 +52,8 @@ void setup(){
     creditoss[i] = loadImage("/Creditos/Creditos_" + i + ".png");}
   for(int i = 0; i < Sustos.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Sustos[i] = loadImage("Sangre_" + i + ".png");}
+  for(int i = 0; i < Lavaplatoss.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+    Lavaplatoss[i] = loadImage("/Nivel2/Lava_" + i + ".png");}
   minim = new Minim(this);
   Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el boton en la variable player
   Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el boton en la variable player

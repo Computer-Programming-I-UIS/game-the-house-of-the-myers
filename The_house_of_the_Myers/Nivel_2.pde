@@ -17,17 +17,17 @@ void nivel_2(){
         if(la == 1){this.la = 0 ;}else{this.la = 1 ;}
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}}
   if(la == 1){ // lavadora
-    
+    lavanderia();
   }
-  if(( x < 240 )&&(x > 120 )){ if( y < 140){if(keyPressed){
+  if(( x < 240 )&&(x > 120 )){ if( y < 140){if(keyPressed){ //lavaplatos
       if(key == 'z'){
         if(lav == 1){this.lav = 0 ;}else{this.lav = 1 ;}
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}} // Invocar texto QW  
   if(lav == 1){
-    
+    lavaplatos();
   }
   if(( x < 420 )&&(x > 240 )){ if( y < 140){ image(intt, 100 , 615 , 800, 80); text("Los cajones estarían cerradas ",500, 630);}}
-  if(( x < 550 )&&(x > 430 )){ if( y < 140){if(keyPressed){
+  if(( x < 550 )&&(x > 430 )){ if( y < 140){if(keyPressed){ //nevera
       if(key == 'z'){
         if(ne == 1){this.ne = 0 ;}else{this.ne = 1 ;}
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}} // Invocar texto QW  
@@ -57,4 +57,20 @@ void nivel_2(){
   //text(x , 20 , 20  ) ;
   text(y , 20 , 20  ) ;
   susto();
+}
+
+void lavanderia(){
+  
+}
+int llap = 0 ; int lac = 0 ; int lacc = 0 ;
+void lavaplatos(){
+  if(llap == 1){
+    
+  }else{image(Lavaplatoss[0],100,100,800,600);image(intt, 200 , 615 , 600, 80); QW.display() ;
+  if((mouseY < 390 )&&(mouseY > 320 )){ if(( mouseX  < 367)&&( mouseX > 460)){
+      image(intt, 200 , 615 , 600, 80); 
+      text("Necesitarias una llave para soltar la tubería", 500, 630);}}}
+  fill(0);
+  text(mouseY , 20 , 20 );
+  text(mouseX , 70 , 70 );
 }
