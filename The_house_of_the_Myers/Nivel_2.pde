@@ -73,11 +73,13 @@ void lavanderia(){
 
 int llap = 0 ; int lac = 0 ; int lacc = 0 ;
 void lavaplatos(){
-  if(llap == 1){
+  if(llag == 1){
+    fill(0);
+    text(mouseY , 20 , 20 );
+    text(mouseX , 70 , 70 );
     
-  }else{image(Lavaplatoss[0],100,100,800,600);image(intt, 200 , 615 , 600, 80); QW.display() ;
-  if((mouseY < 390 )&&(mouseY > 320 )){ if(( mouseX  < 367)&&( mouseX > 460)){
+  }else{image(Lavaplatoss[0],0,0,1000,700);image(intt, 200 , 615 , 600, 80); QW.display() ;
+  if((mouseY < 390 )&&(mouseY > 320 )){ if(( mouseX  < 460)&&( mouseX > 367)){
       image(intt, 200 , 615 , 600, 80); 
       text("Necesitarias una llave para soltar la tubería", 500, 630);}}}
-  fill(0);
 }
