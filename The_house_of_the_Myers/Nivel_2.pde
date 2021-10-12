@@ -1,4 +1,4 @@
-int la = 0 ; int lav = 0 ; int ne = 0 ; int gab = 0 ; int llag = 0 ; int llaved = 0 ; int llave2 = 0 ;
+int la = 0 ; int lav = 0 ; int ne = 0 ; int gab = 0 ; int llag = 0 ; int llaved = 0 ; int llave2 = 0 ; int cor = 0 ;
 
 void nivel_2(){
   image(Mapa[1], 0 , 0, 1000, 690 );
@@ -30,8 +30,14 @@ void nivel_2(){
         if(ne == 1){this.ne = 0 ;}else{this.ne = 1 ;}
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}} // Invocar texto QW  
   if(ne == 1){
-    
-  }
+    image(Lavadora[2],0,0,1000,700);
+    fill(0); text(mouseY,20,20);text(mouseX, 100, 20 );
+    if((mouseY < 669 )&&(mouseY > 598 )){ if(( mouseX  < 405)&&( mouseX > 249)){
+      image(intt, 200 , 615 , 600, 80); 
+      text("Clip para recoger", 500, 630);
+      if(mousePressed){
+        this.cor = 1 ;this.ne = 2 ;}}}}
+  if(ne == 2 ){image(Lavadora[3],0,0,1000,700);}
   if(( x < 790 )&&(x > 630 )){ if( y < 140){if(keyPressed){ // cajon vinos
       if(key == 'z'){if(llag == 1){
         if(gab == 1){this.gab = 0 ;}else{this.gab = 1 ;}}else{image(intt, 100 , 615 , 800, 80); text("La gaveta estarían cerradas y parecería necesitar una llave ",500, 630);}
