@@ -1,5 +1,5 @@
 int la = 0 ; int lav = 0 ; int ne = 0 ; int gab = 0 ; int llag = 0 ; int llaved = 0 ; int llave2 = 0 ; int cor = 0 ;
-
+//fill(0); text(mouseY,20,20);text(mouseX, 100, 20 );
 void nivel_2(){
   image(Mapa[1], 0 , 0, 1000, 690 );
   if( y > 530 ){ if( x < 189){this.x = x + 10 ; }}// limite bajada
@@ -31,7 +31,6 @@ void nivel_2(){
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}} // Invocar texto QW  
   if(ne == 1){
     image(Lavadora[2],0,0,1000,700);
-    fill(0); text(mouseY,20,20);text(mouseX, 100, 20 );
     if((mouseY < 669 )&&(mouseY > 598 )){ if(( mouseX  < 405)&&( mouseX > 249)){
       image(intt, 200 , 615 , 600, 80); 
       text("Clip para recoger", 500, 630);
@@ -43,7 +42,16 @@ void nivel_2(){
         if(gab == 1){this.gab = 0 ;}else{this.gab = 1 ;}}else{image(intt, 100 , 615 , 800, 80); text("La gaveta estarían cerradas y parecería necesitar una llave ",500, 630);}
       }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}} // Invocar texto QW  
   if(gab == 1){
-    
+    if(llave2 == 0){
+      image(Lavadora[4],0,0,1000,700);
+      if((mouseY < 401 )&&(mouseY > 306 )){ if(( mouseX  < 706)&&( mouseX > 250)){
+      image(intt, 200 , 615 , 600, 80); 
+      text("Clip para recoger", 500, 630);
+      if(mousePressed){
+        if(cor == 1){
+        this.llave2 = 1 ;
+      }else{text("Necesitas algo para poder abrir esta botella", 500, 630);}}}}
+    }else{image(Lavadora[5],0,0,1000,700);}
   }
   if(( y < 370 )&&(y > 260 )){ if( x > 870){ // puerta
     if(keyPressed){
@@ -86,7 +94,7 @@ void lavaplatos(){
     }}if(lac == 7){
     for(int i = 4; i < 10 ; i++){
         image(Lavaplatoss[i],0,0,1000,700);}
-    this.llap = 9 ;
+    this.llap = 8 ;
     this.llaved = 1 ;
     }else{
       image(Lavaplatoss[llap],0,0,1000,700);
