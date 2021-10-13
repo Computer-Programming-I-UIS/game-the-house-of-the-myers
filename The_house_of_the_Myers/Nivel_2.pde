@@ -34,7 +34,7 @@ void nivel_2(){
     image(Lavadora[2],0,0,1000,700);
     if((mouseY < 669 )&&(mouseY > 598 )){ if(( mouseX  < 405)&&( mouseX > 249)){
       image(intt, 200 , 615 , 600, 80); 
-      text("Clip para recoger", 500, 630);
+      text("Clic para recoger", 500, 630);
       if(mousePressed){
         this.cor = 1 ;this.ne = 2 ;}}}}
   if(ne == 2 ){image(Lavadora[3],0,0,1000,700);}
@@ -47,7 +47,7 @@ void nivel_2(){
       image(Lavadora[4],0,0,1000,700);
       if((mouseY < 401 )&&(mouseY > 306 )){ if(( mouseX  < 706)&&( mouseX > 250)){
       image(intt, 200 , 615 , 600, 80); 
-      text("Clip para recoger", 500, 630);
+      text("Clic para recoger", 500, 630);
       if(mousePressed){
         if(cor == 1){
         this.llave2 = 1 ;
@@ -58,7 +58,7 @@ void nivel_2(){
     if(keyPressed){
       if(key == 'z'){ if(llave2 == 1){
         image(intt, 200 , 615 , 600, 80); 
-        text("La puerta se abre y entraría Hanna en ella ", 500, 630);
+        text("La puerta se abre y entra Hanna en ella ", 500, 630);
         this.Nivel = 8 ;
         this.x = 15 ;
         this.y = 500 ;
@@ -77,7 +77,7 @@ void lavanderia(){
     image(Lavadora[0],0,0,1000,700);
     if((mouseY < 552 )&&(mouseY > 439 )){ if(( mouseX  < 543)&&( mouseX > 416)){
       image(intt, 200 , 615 , 600, 80); 
-      text("Clip para recoger la llave", 500, 630);
+      text("Clic para recoger la llave", 500, 630);
       if(mousePressed){
         this.llag = 1 ;
 }}}}}
@@ -87,7 +87,7 @@ void lavaplatos(){
   if(llag == 1){
     fill(0);
     image(intt, 200 , 615 , 600, 80); 
-    text("Gira la llave para soltar la tuveria(RIGHT)", 500, 630);
+    text("Gira la llave para soltar la tubería(RIGHT)", 500, 630);
     if(keyPressed&&(key==CODED)){if(keyCode==RIGHT){
       this.lac = lac + 1;
       this.llap = llap + 1 ;
@@ -101,10 +101,10 @@ void lavaplatos(){
       image(Lavaplatoss[llap],0,0,1000,700);
       if(llaved == 1){
       image(intt, 200 , 615 , 600, 80); 
-      text("Recogerias la llave", 500, 630);}
+      text("Recoges la llave", 500, 630);}
     }
   }else{image(Lavaplatoss[0],0,0,1000,700);image(intt, 200 , 615 , 600, 80); QW.display() ;
   if((mouseY < 390 )&&(mouseY > 320 )){ if(( mouseX  < 460)&&( mouseX > 367)){
       image(intt, 200 , 615 , 600, 80); 
-      text("Necesitarias una llave para soltar la tubería", 500, 630);}}}
+      text("Necesitas una llave para soltar la tubería", 500, 630);}}}
 }
