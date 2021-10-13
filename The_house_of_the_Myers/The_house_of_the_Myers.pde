@@ -21,7 +21,7 @@ PImage [] Lavadora = new PImage [6];
 PImage Candado ;
 PImage intt ;
 
-int Nivel = 2 ; // nivel
+int Nivel = 3 ; // nivel
 int c = 0 ; // Contador escena inicio
 int RR = 0 ;
 int xc = 0;
@@ -101,6 +101,9 @@ void draw(){
     break;
     case 2 : // nivel 2
     nivel_2();
+    break;
+    case 3 : // nivel 2
+    nivel_3();
     break;
     case 8 : //Creditos
     creditos() ;

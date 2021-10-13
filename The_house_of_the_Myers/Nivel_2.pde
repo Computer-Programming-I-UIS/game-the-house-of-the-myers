@@ -58,9 +58,9 @@ void nivel_2(){
       if(key == 'z'){ if(llave2 == 1){
         image(intt, 200 , 615 , 600, 80); 
         text("La puerta se abre y entraría Hanna en ella ", 500, 630);
-        this.Nivel = 8 ;
-        this.x = 15 ;
-        this.y = 500 ;
+        this.Nivel = 3 ;
+        this.x = 53 ;
+        this.y = 456 ;
         Puertas.trigger();
       }else{
         image(intt, 200 , 615 , 600, 80);
