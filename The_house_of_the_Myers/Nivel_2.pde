@@ -2,6 +2,7 @@ int lar = 0 ;int la = 0 ; int lav = 0 ; int ne = 0 ; int gab = 0 ; int llag = 0 
 
 void nivel_2(){
   image(Mapa[1], 0 , 0, 1000, 690 );
+  image(Lavadora[6],820,510,190,190);
   if( y > 530 ){ if( x < 189){this.x = x + 10 ; }}// limite bajada
   if(( y > 529)&&(y<531)){ if(( x < 610) && ( x > 200)){this.y = y + 10 ; }} // limite pared abajo
   if(( y > 409)&&( y < 531) ){ if(( x > 0) && ( x < 609)){this.y = y - 10 ; }} // limite pared arriba
