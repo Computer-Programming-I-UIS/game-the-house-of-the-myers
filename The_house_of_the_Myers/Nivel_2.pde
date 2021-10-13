@@ -1,5 +1,5 @@
 int la = 0 ; int lav = 0 ; int ne = 0 ; int gab = 0 ; int llag = 0 ; int llaved = 0 ; int llave2 = 0 ; int cor = 0 ;
-//fill(0); text(mouseY,20,20);text(mouseX, 100, 20 );
+
 void nivel_2(){
   image(Mapa[1], 0 , 0, 1000, 690 );
   if( y > 530 ){ if( x < 189){this.x = x + 10 ; }}// limite bajada

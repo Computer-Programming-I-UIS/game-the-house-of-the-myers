@@ -3,6 +3,7 @@ int cofre = 0 ; // cofre abierto o cerrado
 int li = 0 ; // libreroa abierta o cerrada
 int uz = 0 ; // interactuando 1 = true
 int co = 0 ; // cofre ya abierto o cerrado
+
 void nivel_1(){
   textAlign(CENTER, TOP);
   fill(250);
@@ -27,6 +28,7 @@ void nivel_1(){
   if(( y < 511 )&&(y > 10)){ if(( x <147)&&( x > 137)){this.x = x - 10; }} // choque escaleras
   if(( y < 300)&&(y > 1 )){ if(( x > 197) && ( x < 300)){this.x = x + 10 ; }} // choque caja
   if(( y < 304 )&&(y > 104 )){ if( x > 830){this.x = x - 10 ; }} // choque Libreria
+  if(( x < 380 )&&( x > 300 )){ if( y < 100 ){if(keyCode == LEFT){this.x = x + 10 ; }if(keyCode == UP){this.y = y + 10 ; }}} 
   if(( y < 304 )&&(y > 104 )){ if( x > 740){if(keyPressed){
       if(key == 'z'){
         if(uz == 1){this.uz = 0 ;}else{this.uz = 1 ;}
@@ -73,6 +75,7 @@ void libreria() {
         image(intt, 200 , 615 , 600, 80); 
         text("Encontraste una página que parece ser del diarío", 500, 630);
   }}}}}}else{ image(Libre[lie], 0 , 0, 1000, 699 );}
+  
 }
 int n1 = 0; int n2 = 0; int n3 = 0; int n4 = 0;
 int ar = 0 ;
