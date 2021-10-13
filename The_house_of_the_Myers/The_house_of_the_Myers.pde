@@ -17,7 +17,7 @@ PImage [] Cofre = new PImage [5]; // contiene los diferentes cofres
 PImage [] Sustos = new PImage [7]; // contiene las imagenes de myers sustos
 PImage [] creditoss = new PImage[2] ;
 PImage [] Lavaplatoss = new PImage[10] ; // contiene imagenes y animación del lavaplatos
-PImage [] Lavadora = new PImage [6];
+PImage [] Lavadora = new PImage [8];
 PImage Candado ;
 PImage intt ;
 
