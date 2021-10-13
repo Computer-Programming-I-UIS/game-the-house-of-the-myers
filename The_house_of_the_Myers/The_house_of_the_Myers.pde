@@ -9,7 +9,7 @@ AudioSample Cofres;
 
 PImage Portada ;
 PImage [] Inicio = new PImage[2] ; // Variable para el inicio del juego
-PImage [] Mapa = new PImage[2] ; // contiene los mapas del juego
+PImage [] Mapa = new PImage[4] ; // contiene los mapas del juego
 PImage [] Personaje = new PImage[8] ; // animación personaje
 PImage [] Diario = new PImage[4] ; // contiene las imagenes del diario
 PImage [] Libre = new PImage[2] ; // es la libreria
@@ -21,7 +21,7 @@ PImage [] Lavadora = new PImage [6];
 PImage Candado ;
 PImage intt ;
 
-int Nivel = 1 ; // nivel
+int Nivel = 2 ; // nivel
 int c = 0 ; // Contador escena inicio
 int RR = 0 ;
 int xc = 0;

@@ -1,4 +1,4 @@
-int la = 0 ; int lav = 0 ; int ne = 0 ; int gab = 0 ; int llag = 0 ; int llaved = 0 ; int llave2 = 0 ; int cor = 0 ;
+int lar = 0 ;int la = 0 ; int lav = 0 ; int ne = 0 ; int gab = 0 ; int llag = 0 ; int llaved = 0 ; int llave2 = 0 ; int cor = 0 ;
 
 void nivel_2(){
   image(Mapa[1], 0 , 0, 1000, 690 );
@@ -10,13 +10,6 @@ void nivel_2(){
   if( x > 739 ){ if(y > 409){this.y = y - 10 ; }}// lavadora arriba + murp
   if(y < 90){ this.y = y + 10 ; } // cocina
   if(x < 119){ this.x = x + 10 ; } // cocina lado
-  if( y > 411 ){ if( x > 720){if(keyPressed){
-      if(key == 'z'){
-        if(la == 1){this.la = 0 ;}else{this.la = 1 ;}
-      }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}}
-  if(la == 1){ // lavadora
-    lavanderia();
-  }
   if(( x < 240 )&&(x > 120 )){ if( y < 140){if(keyPressed){ //lavaplatos
       if(key == 'z'){
         if(lav == 1){this.lav = 0 ;}else{this.lav = 1 ;}
@@ -24,6 +17,13 @@ void nivel_2(){
   if(lav == 1){
     lavaplatos();
   }else{ persona();}
+  if( y > 411 ){ if( x > 720){if(keyPressed){
+      if(key == 'z'){
+        if(la == 1){this.la = 0 ;}else{this.la = 1 ;}
+      }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}}
+  if(la == 1){ // lavadora
+    lavanderia();
+  }
   if(( x < 420 )&&(x > 240 )){ if( y < 140){ image(intt, 100 , 615 , 800, 80); text("Los cajones estarían cerradas ",500, 630);}}
   if(( x < 550 )&&(x > 430 )){ if( y < 140){if(keyPressed){ //nevera
       if(key == 'z'){
