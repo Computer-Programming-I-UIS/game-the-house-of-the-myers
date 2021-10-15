@@ -18,6 +18,7 @@ PImage [] Sustos = new PImage [7]; // contiene las imagenes de myers sustos
 PImage [] creditoss = new PImage[2] ;
 PImage [] Lavaplatoss = new PImage[10] ; // contiene imagenes y animación del lavaplatos
 PImage [] Lavadora = new PImage [8];
+PImage [] Puzzle = new PImage [7];
 PImage Candado ;
 PImage intt ;
 
@@ -57,6 +58,8 @@ void setup(){
     Lavaplatoss[i] = loadImage("/Nivel2/Lava_" + i + ".png");}
   for(int i = 0; i < Lavadora.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
     Lavadora[i] = loadImage("/Nivel2/LAV_" + i + ".png");}
+  for(int i = 0; i < Puzzle.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+    Puzzle[i] = loadImage("/Nivel2/LAV_" + i + ".png");}
   minim = new Minim(this);
   Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el boton en la variable player
   Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el boton en la variable player
