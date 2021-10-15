@@ -52,12 +52,12 @@ void nivel_3(){
         image(Puzzle[3], 0 , 0, 1000, 690 );
         text("La puerta se abre y entra Hanna en ella ", 500, 630);
         this.Nivel = 4 ;
-        this.x = 53 ;
-        this.y = 456 ;
+        this.x = 340 ;
+        this.y = 210 ;
         Puertas.trigger();
     }else{
       image(Puzzle[0], 0 , 0, 1000, 690 );
       if(fi1 == 1){image(Puzzle[1], 0 , 0, 1000, 690 ); if(fi2 == 1){image(Puzzle[2], 0 , 0, 1000, 690 );if(fi3 == 1){image(Puzzle[3], 0 , 0, 1000, 690 ); this.rompe = 1;}}if(fi3 == 1){image(Puzzle[2], 0 , 0, 1000, 690 );}
       }else{if(fi2 == 1){image(Puzzle[6], 0 , 0, 1000, 690 );if(fi3 == 1){image(Puzzle[2], 0 , 0, 1000, 690 );if(fi1 == 1){image(Puzzle[1], 0 , 0, 1000, 690 );}}if(fi1 == 1){image(Puzzle[2], 0 , 0, 1000, 690 );}}}}}
-   fill(0);text(mouseX ,20 ,20);text(mouseY, 20 , 70);
+   susto();
 }

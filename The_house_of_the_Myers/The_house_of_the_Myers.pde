@@ -1,4 +1,5 @@
 import ddf.minim.*; //Se importa minim que sera la biblioteca que usaremos para poner música en el juego.
+//   fill(0);text(mouseX ,20 ,20);text(mouseY, 20 , 70);
 
 Minim minim; // se declaran nombre para llamer las funciones
 AudioPlayer Menu;
@@ -23,7 +24,7 @@ PImage [] Puzzle = new PImage [7];
 PImage Candado ;
 PImage intt ;
 
-int Nivel = 3 ; // nivel
+int Nivel = 4 ; // nivel
 int c = 0 ; // Contador escena inicio
 int RR = 0 ;
 int xc = 0;
