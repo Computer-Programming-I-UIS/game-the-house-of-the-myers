@@ -5,6 +5,7 @@ int y = 300 ; // ubicación y
 int D = 0 ; // numero de paginas del diario
 int DD = 0 ; // numero de paginas del diario actual
 void persona(){
+  delay(0);
   if(keyPressed&&(key==CODED)){//se revisa que se este presionando una tecla
     if(keyCode==LEFT){//se pregunta si se esta precionanda izquierda
       this.x = x - 10;
@@ -43,7 +44,5 @@ void persona(){
           if((D <= DD)&&(DD >= 1)){this.DD = DD - 1;}}}
       image(Diario[DD], 0,0, 1000,700);
   }else{image(Diario[0], 857,580, 150 ,110);}
-}
-void cofre(){
-  
+  delay(30);
 }
