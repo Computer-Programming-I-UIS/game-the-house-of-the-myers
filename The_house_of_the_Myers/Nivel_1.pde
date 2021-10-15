@@ -15,7 +15,7 @@ void nivel_1(){
     if(keyPressed){
       if(key == 'z'){ if(llave == 1){
         image(intt, 200 , 615 , 600, 80); 
-        text("La puerta se abre y entraría Hanna en ella ", 500, 630);
+        text("La puerta se abre y entra Hanna en ella ", 500, 630);
         this.Nivel = 2 ;
         this.x = 190 ;
         this.y = 560 ;
