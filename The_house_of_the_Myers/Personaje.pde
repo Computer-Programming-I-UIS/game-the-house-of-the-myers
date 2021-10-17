@@ -44,5 +44,5 @@ void persona(){
           if((D <= DD)&&(DD >= 1)){this.DD = DD - 1;}}}
       image(Diario[DD], 0,0, 1000,700);
   }else{image(Diario[0], 857,580, 150 ,110);}
-  delay(30);
+  delay(20);
 }

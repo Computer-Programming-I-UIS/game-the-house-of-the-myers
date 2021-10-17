@@ -24,7 +24,7 @@ PImage [] Puzzle = new PImage [7];
 PImage Candado ;
 PImage intt ;
 
-int Nivel = 1 ; // nivel
+int Nivel = 0 ; // nivel
 int c = 0 ; // Contador escena inicio
 int RR = 0 ;
 int xc = 0;
@@ -117,6 +117,7 @@ void draw(){
     nivel_4();
     break;
     case 8 : //Creditos
+    delay(0);
     creditos() ;
     break;
   }
