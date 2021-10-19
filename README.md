@@ -16,7 +16,7 @@ Videojuego tipo puzzle de terror
 
 # Descripción
 
-La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "victima" llamada Hanna quién no sabe el motivo por el que fue raptada y encerrada en un sótado desconcido que resulta ser el de la casa de uno de los asesinos seriales mas peligrosos.
+La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "victima" llamada Laurie quién no sabe el motivo por el que fue raptada y encerrada en un sótado desconcido que resulta ser el de la casa de uno de los asesinos seriales mas peligrosos.
 
 # 	:video_game: ¿Como Jugar? 	:video_game:
 

@@ -1,7 +1,7 @@
 import ddf.minim.*; //Se importa minim que sera la biblioteca que usaremos para poner música en el juego.
 //   fill(0);text(mouseX ,20 ,20);text(mouseY, 20 , 70);
 
-Minim minim; // se declaran nombre para llamer las funciones
+Minim minim; // se declaran nombre para llamar las funciones
 AudioPlayer Menu;
 AudioPlayer Nivel1;
 AudioSample Puertas;
@@ -40,35 +40,35 @@ void setup(){
   intt = loadImage("Interactua.png");
   Candado = loadImage("/Nivel1/Candado.png");
   QW = new presion() ;
-  for(int i = 0; i < Inicio.length ;i++){ // este for se usa para cargar las imagenes que van en el inicio
+  for(int i = 0; i < Inicio.length ;i++){ // este for se usa para cargar las imágenes que van en el inicio
     Inicio[i] = loadImage("/Nivel1/Inicio_" + i + ".png");}
-  for(int i = 0; i < Mapa.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Mapa.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Mapa[i] = loadImage("Nivel_" + i + ".png");}
-  for(int i = 0; i < Personaje.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Personaje.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Personaje[i] = loadImage("/Judith/Judith_" + i + ".png");}
-  for(int i = 0; i < Diario.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Diario.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Diario[i] = loadImage("/Judith/Libro_" + i + ".png");}
-  for(int i = 0; i < Libre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Libre.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Libre[i] = loadImage("/Nivel1/Libreria_" + i + ".png");}
-  for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Cofre.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Cofre[i] = loadImage("/Nivel1/Cofre_" + i + ".png");}
-  for(int i = 0; i < creditoss.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < creditoss.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     creditoss[i] = loadImage("/Creditos/Creditos_" + i + ".png");}
-  for(int i = 0; i < Sustos.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Sustos.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Sustos[i] = loadImage("Sangre_" + i + ".png");}
-  for(int i = 0; i < Lavaplatoss.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Lavaplatoss.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Lavaplatoss[i] = loadImage("/Nivel2/Lava_" + i + ".png");}
-  for(int i = 0; i < Lavadora.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Lavadora.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Lavadora[i] = loadImage("/Nivel2/LAV_" + i + ".png");}
-  for(int i = 0; i < Puzzle.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < Puzzle.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     Puzzle[i] = loadImage("/Nivel3/Puera_" + i + ".png");}
-  for(int i = 0; i < ficha.length ;i++){ // este for se usa para cargar las imaganes de los mapas de los nivels
+  for(int i = 0; i < ficha.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     ficha[i] = loadImage("/Nivel3/Ficha_" + i + ".png");}
   minim = new Minim(this);
-  Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el boton en la variable player
-  Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el boton en la variable player
-  Cofres = minim.loadSample("/Sonido&Musica/Sonido_Cofre.mp3" ); // se  guarda el audio para el boton en la variable player
-  Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el boton en la variable player
+  Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el botn en la variable player
+  Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el botón en la variable player
+  Cofres = minim.loadSample("/Sonido&Musica/Sonido_Cofre.mp3" ); // se  guarda el audio para el botón en la variable player
+  Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el botón en la variable player
 }
 void draw(){ 
   delay(15);
@@ -85,7 +85,7 @@ void draw(){
       this.Nivel = 1 ; // Entrar juego
     }}}}}
     if(mouseY < 510 ){ if(mouseY > 415 ){ if( mouseX < 420){ if( mouseX > 80){if( mouseButton == LEFT  ){
-      this.Nivel = 8 ; // Entrar creditos
+      this.Nivel = 8 ; // Entrar créditos
     }}}}}
     break;
     case 1 : // Nivel 1

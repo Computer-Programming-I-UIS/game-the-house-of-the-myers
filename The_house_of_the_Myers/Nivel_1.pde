@@ -1,6 +1,6 @@
 int llave = 0 ; // Variable llave = 0 no tiene la llave
 int cofre = 0 ; // cofre abierto o cerrado
-int li = 0 ; // libreroa abierta o cerrada
+int li = 0 ; // librería abierta o cerrada
 int uz = 0 ; // interactuando 1 = true
 int co = 0 ; // cofre ya abierto o cerrado
 
@@ -54,8 +54,8 @@ void nivel_1(){
   susto() ;
 }
 
-int lie = 0 ; // se usa para saber si ya tomo la pagina
-int ccc = 0 ; // se usa para marcar que ya tiene la pagina
+int lie = 0 ; // se usa para saber si ya tomo la página
+int ccc = 0 ; // se usa para marcar que ya tiene la página
 void libreria() {
   if(lie == 0){
     image(Libre[lie], 0 , 0, 1000, 699 );
