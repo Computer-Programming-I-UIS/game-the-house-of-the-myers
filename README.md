@@ -1,7 +1,7 @@
 # 	:hocho: The-house-of-the-myers 	:hocho:
 game-the-house-of-the-myers created by GitHub Classroom
 
-![Portada](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Inicio.png)
+![Portada](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Banner.png)
 
 # 	:candle: Hecho por
 -Carlos Fernando Jerez Carreño -2201729
@@ -17,6 +17,8 @@ Videojuego tipo puzzle de terror
 # Descripción
 
 La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "victima" llamada Laurie quién no sabe el motivo por el que fue raptada y encerrada en un sótado desconcido que resulta ser el de la casa de uno de los asesinos seriales mas peligrosos.
+
+![Trailer](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Version%201.mp4)
 
 # 	:video_game: ¿Como Jugar? 	:video_game:
 
@@ -35,3 +37,4 @@ La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "
 
 - Sound Edit -> www.youtube.com/channel/UC5hQxusq_Nkhani0qKPCPBw
 - RubioMiguel1 -> https://www.youtube.com/channel/UCmA7n1IODCHi7ppduGTyC2A
+![Creditos](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Creditos.mp4)
