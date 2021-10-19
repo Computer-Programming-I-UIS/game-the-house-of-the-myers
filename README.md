@@ -18,7 +18,7 @@ Videojuego tipo puzzle de terror
 
 La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "victima" llamada Laurie quién no sabe el motivo por el que fue raptada y encerrada en un sótado desconcido que resulta ser el de la casa de uno de los asesinos seriales mas peligrosos.
 
-![Trailer](https://www.youtube.com/watch?v=bZaKJr5XA2g)
+[![Watch the video](https://img.youtube.com/vi/watch?v=bZaKJr5XA2g/maxresdefault.jpg)](https://youtu.be/watch?v=bZaKJr5XA2g)
 
 # 	:video_game: ¿Como Jugar? 	:video_game:
 
@@ -37,4 +37,5 @@ La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "
 
 - Sound Edit -> www.youtube.com/channel/UC5hQxusq_Nkhani0qKPCPBw
 - RubioMiguel1 -> https://www.youtube.com/channel/UCmA7n1IODCHi7ppduGTyC2A
-![Creditos](https://www.youtube.com/watch?v=lh5FB_23rD4)
+
+[![Watch the video](https://img.youtube.com/vi/watch?v=lh5FB_23rD4/maxresdefault.jpg)](https://youtu.be/watch?v=lh5FB_23rD4)
