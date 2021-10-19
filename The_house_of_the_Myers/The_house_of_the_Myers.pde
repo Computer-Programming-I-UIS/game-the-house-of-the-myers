@@ -24,7 +24,7 @@ PImage [] Puzzle = new PImage [7];
 PImage Candado ;
 PImage intt ;
 
-int Nivel = 0 ; // nivel
+int Nivel = 4 ; // nivel
 int c = 0 ; // Contador escena inicio
 int RR = 0 ;
 int xc = 0;

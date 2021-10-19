@@ -51,14 +51,13 @@ void nivel_2(){
       if(mousePressed){
         if(cor == 1){
         this.llave2 = 1 ;
-      }else{text("Necesitas algo para poder abrir esta botella", 500, 630);}}}}
+      }else{image(intt, 200 , 615 , 600, 80);text("Necesitas algo para poder abrir esta botella", 500, 630);}}}}
     }else{image(Lavadora[5],0,0,1000,700);}
   }
   if(( y < 370 )&&(y > 260 )){ if( x > 870){ // puerta
     if(keyPressed){
       if(key == 'z'){ if(llave2 == 1){
         image(intt, 200 , 615 , 600, 80); 
-
         text("La puerta se abre y entra Hanna en ella ", 500, 630);
         this.Nivel = 3 ;
         this.x = 53 ;
@@ -87,13 +86,11 @@ int llap = 1 ; int lac = 1 ; int lacc = 0 ;
 void lavaplatos(){
   if(llag == 1){
     fill(0);
-    image(intt, 200 , 615 , 600, 80); 
-    text("Gira la llave para soltar la tubería(RIGHT)", 500, 630);
     if(keyPressed&&(key==CODED)){if(keyCode==RIGHT){
       this.lac = lac + 1;
       this.llap = llap + 1 ;
-      if(llap == 4){this.llap = 1 ;}
-    }}if(lac == 7){
+      if(llap == 4){this.llap = 1 ;}}}
+    if(lac == 7){
     for(int i = 4; i < 10 ; i++){
         image(Lavaplatoss[i],0,0,1000,700);}
     this.llap = 8 ;
@@ -104,6 +101,8 @@ void lavaplatos(){
       image(intt, 200 , 615 , 600, 80); 
       text("Recoges la llave", 500, 630);}
     }
+    image(intt, 200 , 615 , 600, 80); 
+    text("Gira la llave para soltar la tubería(RIGHT)", 500, 630);
   }else{image(Lavaplatoss[0],0,0,1000,700);image(intt, 200 , 615 , 600, 80); QW.display() ;
   if((mouseY < 390 )&&(mouseY > 320 )){ if(( mouseX  < 460)&&( mouseX > 367)){
       image(intt, 200 , 615 , 600, 80); 
