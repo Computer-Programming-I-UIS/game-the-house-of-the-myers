@@ -97,7 +97,7 @@ void nivel_4(){
     text( nn2 , 420 , 330 );
     text( nn3 , 560 , 330 );
     text( nn4 , 720 , 330 );
-  if(((nn1 == 1 )&&( nn2 == 9))&&((nn3 == 7)&&(nn4 == 8))){this.Nivel = 6 ;}
+  if(((nn1 == 1 )&&( nn2 == 9))&&((nn3 == 9)&&(nn4 == 3))){this.Nivel = 6 ;}
   }
   if( y < 90 ){ if(( x < 630 ) && ( x > 380 )){if(keyPressed){ // cuadro
       if(key == 'z'){

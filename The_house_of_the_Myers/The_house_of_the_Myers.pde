@@ -29,7 +29,7 @@ PImage [] Finales = new PImage [2];// contiene las imágenes del puzzle
 PImage Candado ;// contiene las imágenes del candado
 PImage intt ;// contiene las imágenes el marco de la caja de los textos que aparecen
 
-int Nivel = 4 ; // nivel
+int Nivel = 0 ; // nivel
 int c = 0 ; // Contador escena inicio
 int RR = 0 ;//animación personaje créditos
 int xc = 0;//contador fin de créditos
@@ -71,6 +71,8 @@ void setup(){
     ficha[i] = loadImage("/Nivel3/Ficha_" + i + ".png");}
   for(int i = 0; i < cuadro.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
     cuadro[i] = loadImage("/Nivel4/Cuadro_" + i + ".png");}
+  for(int i = 0; i < Finales.length ;i++){ // este for se usa para cargar las imáganes de los mapas de los niveles
+    Finales[i] = loadImage("/Nivel4/Final_" + i + ".png");}
   minim = new Minim(this);
   Menu = minim.loadFile("/Sonido&Musica/HomicidaParadojico.wav" ); // se  guarda el audio para el botn en la variable player
   Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el botón en la variable player
@@ -79,6 +81,8 @@ void setup(){
 }
 void draw(){ 
   delay(15);
+  textAlign(CENTER, TOP);
+  textSize(32);
   switch(Nivel){
     case 0 :
     image(Portada, 0 , 0, 1000, 700 );
@@ -130,34 +134,30 @@ void draw(){
       Nivel1.rewind();//repetir el sonido
       Nivel1.play();//reproducir el sonido
     }
-    if(c < 2){ // Se muestan las instrucciónes y introducción del juego
-      frameRate(10) ;
-      image(Inicio[c], 0 , 0, 1000, 700 );
-      if(keyPressed){this.c = c + 1 ; }
-    }
-    else{this.Nivel = 8 ;}
+    image(Finales[0], 0 , 0, 1000, 700 );
+    if(keyPressed){this.Nivel = 8 ; }
+    image(intt, 200 , 615 , 600, 80); 
+    text("presiona cualquier tecla para continuar", 500, 630);
     break;
-    
-    case 6 : // Final 2
+  
+    case 6 : // Final 1
     Nivel1.play();
     if(Nivel1.position() == Nivel1.length() )
     {
       Nivel1.rewind();//repetir el sonido
       Nivel1.play();//reproducir el sonido
     }
-    if(c < 2){ // Se muestan las instrucciónes y introducción del juego
-      frameRate(10) ;
-      image(Inicio[c], 0 , 0, 1000, 700 );
-      if(keyPressed){this.c = c + 1 ; }
-    }
-    else{this.Nivel = 8 ;}
+    image(Finales[1], 0 , 0, 1000, 700 );
+    if(keyPressed){this.Nivel = 8 ; }
+    image(intt, 200 , 615 , 600, 80); 
+    text("presiona cualquier tecla para continuar", 500, 630);
     break;
+    
     case 8 : //Créditos
     delay(0);
     creditos() ;
     break;
-  }
-}
+}}
 class presion{
   presion(){}
   void display(){
