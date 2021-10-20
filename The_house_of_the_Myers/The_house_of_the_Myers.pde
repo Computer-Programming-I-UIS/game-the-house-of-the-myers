@@ -78,6 +78,11 @@ void setup(){
   Nivel1 = minim.loadFile("/Sonido&Musica/Abuse_In_The_Orphanage.wav" ); // se  guarda el audio para el botón en la variable player
   Cofres = minim.loadSample("/Sonido&Musica/Sonido_Cofre.mp3" ); // se  guarda el audio para el botón en la variable player
   Puertas = minim.loadSample("/Sonido&Musica/Sonido_Puerta.mp3" ); // se  guarda el audio para el botón en la variable player
+  Nivel2 = minim.loadFile("/Sonido&Musica/Dreaming.mp3" ); // se  guarda el audio para el botón en la variable player
+  Nivel3 = minim.loadFile("/Sonido&Musica/Typical_Lullaby.mp3" ); // se  guarda el audio para el botón en la variable player
+  Nivel4 = minim.loadFile("/Sonido&Musica/Center_Of_The_Earth.mp3" ); // se  guarda el audio para el botón en la variable player
+
+
 }
 void draw(){ 
   delay(15);
@@ -120,12 +125,33 @@ void draw(){
     break;
     case 2 : // nivel 2
     nivel_2();
+    Nivel1.pause();
+    Nivel2.play();
+    if(Nivel2.position() == Nivel2.length() )
+    {
+      Nivel2.rewind();//repetir el sonido
+      Nivel2.play();//reproducir el sonido
+    }
     break;
     case 3 : // nivel 2
     nivel_3();
+    Nivel2.pause();
+    Nivel3.play();
+    if(Nivel3.position() == Nivel3.length() )
+    {
+      Nivel3.rewind();//repetir el sonido
+      Nivel3.play();//reproducir el sonido
+    }
     break;
     case 4 : // nivel 2
     nivel_4();
+        Nivel3.pause();
+    Nivel4.play();
+    if(Nivel4.position() == Nivel4.length() )
+    {
+      Nivel4.rewind();//repetir el sonido
+      Nivel4.play();//reproducir el sonido
+    }
     break;
     case 5 : // Final 1
     Nivel1.play();
