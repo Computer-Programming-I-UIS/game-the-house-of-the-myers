@@ -12,7 +12,7 @@ void nivel_3(){
     if(fi1 == 0){image(ficha[4], 0 , 0, 1000, 690 );
     if((mouseY < 520 )&&(mouseY > 390 )){ if(( mouseX  < 840)&&( mouseX > 660)){
       image(intt, 200 , 615 , 600, 80); 
-      text("Clic para recoger", 500, 630);
+      text("Click para recoger", 500, 630);
       if(mousePressed){
         this.fi1 = 1 ;}}}
     }else{image(ficha[5], 0 , 0, 1000, 690 );}
@@ -25,7 +25,7 @@ void nivel_3(){
     if(fi2 == 0){image(ficha[0], 0 , 0, 1000, 690 );
     if((mouseY < 340 )&&(mouseY > 270 )){ if(( mouseX  < 810)&&( mouseX > 750)){
       image(intt, 200 , 615 , 600, 80); 
-      text("Clic para recoger", 500, 630);
+      text("Click para recoger", 500, 630);
       if(mousePressed){
         this.fi2 = 1 ;}}}
     }else{image(ficha[1], 0 , 0, 1000, 690 );}
@@ -38,7 +38,7 @@ void nivel_3(){
     if(fi3 == 0){image(ficha[2], 0 , 0, 1000, 690 );
     if((mouseY < 550 )&&(mouseY > 440 )){ if(( mouseX  < 810)&&( mouseX > 711)){
       image(intt, 200 , 615 , 600, 80); 
-      text("Clic para recoger", 500, 630);
+      text("Click para recoger", 500, 630);
       if(mousePressed){
         this.fi3 = 1 ;}}}
     }else{image(ficha[3], 0 , 0, 1000, 690 );}

@@ -7,23 +7,23 @@ int DD = 0 ; // numero de paginas del diario actual
 void persona(){
   delay(0);
   if(keyPressed&&(key==CODED)){//se revisa que se este presionando una tecla
-    if(keyCode==LEFT){//se pregunta si se esta precionanda izquierda
+    if(keyCode==LEFT){//se pregunta si se esta presionanda izquierda
       this.x = x - 10;
       if(R == 3){
       this.R = 2;
       }else{this.R = 3;}
       
-    }else if(keyCode==RIGHT){// se pregunta si se esta precionando derecha
+    }else if(keyCode==RIGHT){// se pregunta si se esta presionando derecha
       this.x = x + 10;
       if(R == 1){
         this.R = 0;
       }else{this.R = 1 ;}
-    }if(keyCode==UP){//se pregunta si se esta precionanda izquierda
+    }if(keyCode==UP){//se pregunta si se esta presionanda izquierda
       this.y = y - 10;
       if( R == 4 ){
         this.R= 5 ;
       }else{this.R= 4;}
-    }else if(keyCode==DOWN){// se pregunta si se esta precionando derecha
+    }else if(keyCode==DOWN){// se pregunta si se esta presionando derecha
       this.y = y + 10;
       if(R== 7){
         this.R=6 ;

@@ -2,14 +2,14 @@ int puer1 = 0 ; int puer2 = 0 ; int cua = 0 ;
 void nivel_4(){
   image(Mapa[3], 0 , 0, 1000, 690 );
   //fill(0);text(x ,20 ,20);text(y, 20 , 70);
-  if( x < 311 ){if(keyCode == LEFT){this.x = x + 10 ; }}  // Muros
-  if( x > 630 ){if(keyCode == RIGHT){this.x = x - 10 ; }} // Muro
+  if( x < 311 ){if(keyCode == LEFT){this.x = x + 10 ; }}  // límites Muros
+  if( x > 630 ){if(keyCode == RIGHT){this.x = x - 10 ; }} // límites Muros
   persona();
-  if( y > 560 ){ if(( x > 380 ) && ( x < 580 )){if(keyPressed){ // puerta 1
+  if( y > 560 ){ if(( x > 380 ) && ( x < 580 )){if(keyPressed){ //límites puerta 1
       if(key == 'z'){
         if(puer1 == 1){this.puer1 = 0 ;}else{this.puer1 = 1 ;}
   }}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}}
-  if( x > 600 ){ if(( y > 180 ) && ( y < 250 )){if(keyPressed){ //puerta 2
+  if( x > 600 ){ if(( y > 180 ) && ( y < 250 )){if(keyPressed){ //límites puerta 2
       if(key == 'z'){
   if(puer2 == 1){this.puer2 = 0 ;}else{this.puer2 = 1 ;}}}else{ image(intt, 200 , 615 , 600, 80); QW.display() ; }}}
   

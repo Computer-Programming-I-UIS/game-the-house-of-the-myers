@@ -2,37 +2,40 @@ import ddf.minim.*; //Se importa minim que sera la biblioteca que usaremos para 
 //   fill(0);text(mouseX ,20 ,20);text(mouseY, 20 , 70);
 
 Minim minim; // se declaran nombre para llamar las funciones
-AudioPlayer Menu;
-AudioPlayer Nivel1;
-AudioSample Puertas;
-AudioSample Cofres;
+AudioPlayer Menu;// Se crea la variable que se encarga de la música del menú
+AudioPlayer Nivel1;// Se crea la variable que se encarga de la música del nivel 1
+AudioPlayer Nivel2;// Se crea la variable que se encarga de la música del nivel 2
+AudioPlayer Nivel3;// Se crea la variable que se encarga de la música del nivel 3
+AudioPlayer Nivel4;// Se crea la variable que se encarga de la música del nivel 4
+AudioSample Puertas;// Se crea la variable que se encarga de la música de la puerta
+AudioSample Cofres;// Se crea la variable que se encarga de la música de los cofres
 
 
 PImage Portada ;
 PImage [] Inicio = new PImage[2] ; // Variable para el inicio del juego
 PImage [] Mapa = new PImage[4] ; // contiene los mapas del juego
 PImage [] Personaje = new PImage[8] ; // animación personaje
-PImage [] Diario = new PImage[4] ; // contiene las imagenes del diario
+PImage [] Diario = new PImage[4] ; // contiene las imágenes del diario
 PImage [] Libre = new PImage[2] ; // es la libreria
 PImage [] Cofre = new PImage [5]; // contiene los diferentes cofres
-PImage [] Sustos = new PImage [7]; // contiene las imagenes de myers sustos
-PImage [] creditoss = new PImage[2] ;
+PImage [] Sustos = new PImage [7]; // contiene las imágenes de myers sustos
+PImage [] creditoss = new PImage[2] ;// contiene las imágenes de los créditoss
 PImage [] Lavaplatoss = new PImage[10] ; // contiene imagenes y animación del lavaplatos
-PImage [] Lavadora = new PImage [8];
-PImage [] ficha = new PImage [6];
-PImage [] Puzzle = new PImage [7];
-PImage Candado ;
-PImage intt ;
+PImage [] Lavadora = new PImage [8];// contiene las imágenes de la lavadora
+PImage [] ficha = new PImage [6];// contiene las imágenes de las fichas
+PImage [] Puzzle = new PImage [7];// contiene las imágenes del puzzle
+PImage Candado ;// contiene las imágenes del candado
+PImage intt ;// contiene las imágenes el marco de la caja de los textos que aparecen
 
 int Nivel = 4 ; // nivel
 int c = 0 ; // Contador escena inicio
-int RR = 0 ;
-int xc = 0;
-int CRE = 1000;
-int sus;
-int suss;
+int RR = 0 ;//animación personaje créditos
+int xc = 0;//contador fin de créditos
+int CRE = 1000;//ubicación original de créditos
+int sus; //variables sustos
+int suss;//variables sustos
 
-presion QW ;
+presion QW ;//declara el objeto del cuadro de texto
 
 void setup(){
   size(1000,700);
@@ -93,8 +96,8 @@ void draw(){
     Nivel1.play();
     if(Nivel1.position() == Nivel1.length() )
     {
-      Nivel1.rewind();
-      Nivel1.play();
+      Nivel1.rewind();//repetir el sonido
+      Nivel1.play();//reproducir el sonido
     }
     if(c < 2){ // Se muestan las instrucciónes y introducción del juego
       frameRate(10) ;
@@ -116,7 +119,7 @@ void draw(){
     case 4 : // nivel 2
     nivel_4();
     break;
-    case 8 : //Creditos
+    case 8 : //Créditos
     delay(0);
     creditos() ;
     break;
