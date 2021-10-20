@@ -22,13 +22,13 @@ La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "
 
 [![Watch the video](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Video1.jpg)](https://youtu.be/watch?v=bZaKJr5XA2g)
 
-# 	:video_game: ¿Como Jugar? 	:video_game:
+# 	:video_game: ¿Cómo Jugar? 	:video_game:
 
 - Es necesario descargar la biblioteca Minim, siga las siguientes instrucciones - http://www.programacionyrobotica.com/control-de-sonido-1-con-processing/
 
 - Al descargar el juego, entrar a la carpeta The house of the Myers y ejecutar el archivo .pde que tiene el nombre de la carpeta principal.
 
-# 	:page_with_curl: Creditos 	:page_with_curl:
+# 	:page_with_curl: Créditos 	:page_with_curl:
  :framed_picture: Imagenes sacadas de :
 - Stickpng -> https://www.stickpng.com/es/img/objetos/libro/coleccion-de-libros-antiguos
 - Pngwing ->  www.pngwing.com/ 
@@ -44,6 +44,6 @@ La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "
 :musical_note: Editor de videos :
  -ClipChamp https://app.clipchamp.com/
 
-# Creditos - Click para repoducir 
+# Créditos - Click para repoducir 
 
 [![Watch the video](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Video2.jpg)](https://youtu.be/watch?v=lh5FB_23rD4)
