@@ -32,10 +32,14 @@ La casa de los myers vuelve a tomar vida, con la llegada de Michael junto a su "
 - Pngwing ->  www.pngwing.com/ 
 - Pntree -> https://.pngtree.com/so/Rollos
 - Pixar -> https://www.pixilart.com/draw#
+- Wallhere -> https://wallhere.com/
 
 :musical_note: Musica y sonidos usados :
 
 - Sound Edit -> www.youtube.com/channel/UC5hQxusq_Nkhani0qKPCPBw
 - RubioMiguel1 -> https://www.youtube.com/channel/UCmA7n1IODCHi7ppduGTyC2A
+
+:musical_note: Editor de videos :
+ -ClipChamp https://app.clipchamp.com/
 
 [![Watch the video](https://github.com/Computer-Programming-I-UIS/game-the-house-of-the-myers/blob/main/Media/Video2.jpg)](https://youtu.be/watch?v=lh5FB_23rD4)
